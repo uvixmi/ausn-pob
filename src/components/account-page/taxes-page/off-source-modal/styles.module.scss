@@ -1,0 +1,113 @@
+$mobile: 320px;
+$tablet: 768px;
+$s: 1024px;
+$m: 1280px;
+$l: 1440px;
+$xl: 1920px;
+$xxl: 2560px;
+
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @media screen and (min-width: $tablet) {
+    gap: 32px;
+    padding: 20px 16px;
+  }
+}
+
+.button-item-enter {
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+}
+
+.button-item-cancel {
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+}
+
+.buttons-row {
+  display: flex;
+  gap: 10px;
+
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.list-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-source {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #505050;
+}
+
+.text-input {
+  font-family: "Inter";
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #141414;
+}
+
+.text-input-load {
+  font-family: "Inter";
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #141414;
+}
+
+.necessary {
+  color: #cf133c;
+  font-family: "Inter";
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text-date {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6159ff;
+}
+
+.off-title {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: #141414;
+}

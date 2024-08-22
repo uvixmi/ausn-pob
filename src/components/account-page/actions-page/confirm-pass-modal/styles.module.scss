@@ -1,0 +1,43 @@
+.button-item-enter {
+  width: 50%;
+}
+
+.button-item-cancel {
+  width: 50%;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 10px;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+  gap: 28px;
+}
+
+.text-style {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.modal-wrapper {
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal-title {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+}

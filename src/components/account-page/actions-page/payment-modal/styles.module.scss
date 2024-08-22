@@ -1,0 +1,264 @@
+@import "../../../../ui-kit/theme/colors.scss";
+@import "../../../../ui-kit/theme/fonts.scss";
+
+$mobile: 320px;
+$tablet: 768px;
+$s: 1024px;
+$m: 1280px;
+$l: 1440px;
+$xl: 1920px;
+$xxl: 2560px;
+
+.text-description {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: $base-additional-grey;
+}
+
+.text-description-new {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: $base-additional-grey;
+}
+
+.title-description-header {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.ant-modal {
+  height: -webkit-fill-available;
+}
+
+.modal-style {
+  height: 100%;
+  top: 0;
+  overflow: auto;
+}
+
+.modal-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: $s) {
+    height: 100%;
+  }
+}
+.payment-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 440px;
+
+  @media screen and (min-width: $s) {
+    gap: 24px;
+  }
+}
+
+.inputs-row {
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: $s) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.select-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 440px;
+}
+.default-text {
+  color: #141414;
+}
+
+.pay-inner {
+  height: 44px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: 100%;
+  background: #6159ff;
+  color: #fff;
+}
+
+.add-payment-inner {
+  width: 136px;
+  height: 30px;
+  padding: 6px 8px 6px 12px;
+  border-radius: 2px;
+  border: 1px solid #505050;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: #141414;
+}
+
+.payment-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: $s) {
+    gap: 24px;
+  }
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.remark-text {
+  color: #505050;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+}
+
+.plus-icon {
+  font-size: 14px;
+  color: $brand-primary;
+  align-self: center;
+}
+
+.title-next {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-payment {
+  margin-top: 8px;
+  border: none;
+}
+
+.input-description {
+  font-family: "Inter";
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  color: $base-secondary-1;
+}
+
+.title-text {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: $base-primary-dark;
+}
+
+.update-wrapper {
+  background: #f0f0ff;
+
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.update-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  position: relative;
+}
+
+.banner-title {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: $brand-additional-dark;
+}
+
+.banner-description {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: $base-primary-dark;
+}
+
+.banner-link {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: $brand-primary !important;
+}
+
+.info-icon {
+  color: $brand-additional-dark !important;
+  font-size: 16px;
+}
+
+.necessary {
+  color: #cf133c;
+  font-family: "Inter";
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.button-add-payment {
+  @media screen and (min-width: $s) {
+    width: 173px;
+  }
+}
+
+.datepicker-style {
+  width: 100%;
+  padding: 5px 12px !important;
+  &:hover {
+    border: 1px solid $base-secondary-1;
+  }
+
+  &:focus {
+    border: 1px solid $brand-primary;
+    box-shadow: 0px 0px 0px 2px #f0f0ff;
+  }
+}
+
+.trash-icon {
+  color: $red-primary !important;
+}
+
+.error-text {
+  color: $red-primary;
+  font-family: "Inter";
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 18px;
+}

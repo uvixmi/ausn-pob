@@ -1,0 +1,37 @@
+$mobile: 320px;
+$tablet: 768px;
+$s: 1024px;
+$m: 1280px;
+$l: 1440px;
+$xl: 1920px;
+$xxl: 2560px;
+
+.modal-settings-quit .ant-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 4px;
+  padding: 24px !important;
+  height: auto;
+
+  @media screen and (min-width: $tablet) {
+    gap: 32px;
+    padding: 40px !important;
+  }
+}
+
+.modal-settings-quit .ant-modal-body {
+  height: 100%;
+}
+
+.modal-settings-quit .ant-select-selector {
+  border-radius: 0px;
+}
+
+.payment-collapse .ant-collapse-item .ant-collapse-header {
+  padding-left: 0;
+}
+
+.payment-collapse .ant-collapse-item .ant-collapse-content-box {
+  padding-left: 0;
+}

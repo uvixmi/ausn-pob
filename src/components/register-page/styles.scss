@@ -1,0 +1,67 @@
+@import "../../ui-kit/theme/colors.scss";
+
+.custom-steps .ant-steps-item-wait .ant-steps-item-icon {
+  background-color: $base-secondary-pale !important;
+  border-color: $brand-primary !important;
+  color: $brand-primary !important;
+}
+
+.custom-steps .ant-steps-item .ant-steps-item-icon {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.custom-steps .ant-steps-item-finish .ant-steps-item-icon {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: $brand-primary !important;
+  color: $base-color-white !important;
+}
+
+.custom-steps .ant-steps-item-finish .ant-steps-item-icon .anticon {
+  color: $base-color-white !important;
+}
+
+.custom-steps .ant-steps-item-wait .ant-steps-icon {
+  color: $brand-primary !important;
+}
+
+.custom-radio {
+  display: flex;
+}
+
+.custom-radio .ant-radio-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 0;
+}
+
+.skeleton-custom .ant-skeleton-element {
+  flex-grow: 1;
+}
+
+.skeleton-custom {
+  flex-grow: 1 !important;
+}
+
+.custom-select-register
+  .ant-select-item-option-selected
+  .ant-select-item-option-content {
+  color: $brand-additional-dark !important;
+  font-weight: 400;
+}
+
+.custom-select-register
+  .ant-select-item-option-active
+  .ant-select-item-option-content {
+  color: $brand-primary;
+  font-weight: 400;
+}

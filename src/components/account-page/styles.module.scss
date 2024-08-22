@@ -1,0 +1,530 @@
+@import "../../ui-kit/theme/colors.scss";
+$mobile: 320px;
+$tablet: 768px;
+$s: 1024px;
+$m: 1280px;
+$l: 1440px;
+$xl: 1920px;
+$xxl: 2560px;
+
+.left-sider-wrapper {
+  background-color: #fff;
+  width: 200px;
+  border-right: 1px solid #d9d9d9;
+}
+
+.left-sider-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.left-sider-menu-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-bottom: 20px;
+}
+
+.left-sider-menu {
+  margin: 0 16px;
+}
+
+.right-sider-wrapper {
+  background-color: #fff;
+  border-left: 1px solid #d9d9d9;
+  padding: 20px 40px;
+}
+
+.heading-text {
+  font-size: 34px;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 24px 24px 0px 274px;
+  gap: 24px;
+
+  @media screen and (min-width: $m) {
+    margin: 32px 24px 0px 274px;
+  }
+}
+
+.logo-inner {
+  margin-bottom: 32px;
+}
+
+.remark-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+  min-height: 42px;
+  gap: 4px;
+}
+
+.remark-button {
+  border-radius: 4px;
+  background: #6159ff;
+  color: #fff;
+  height: 100%;
+  width: 220px;
+}
+
+.remark-text {
+  display: flex;
+  padding: 12px 13px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    67.21deg,
+    #f0f0ff 0%,
+    rgba(245, 245, 245, 0.45) 100%
+  );
+  flex-grow: 1;
+}
+
+.logo-item {
+  margin: 24px 16px auto;
+  cursor: pointer;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.card-item {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  min-width: 216px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  height: 162px;
+}
+
+.card-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.taxes-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.amount-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.taxes-button {
+  height: 26px;
+  border-radius: 2px;
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.button-paid {
+  width: 94px;
+}
+
+.list-item {
+  border: none;
+}
+
+.income-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 0;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.datepicker-item {
+  width: 240px;
+}
+
+.account-select {
+  flex-grow: 1;
+}
+
+.operation-select {
+  width: 155px;
+}
+
+.currency-amount {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.card-fix {
+  background: #fff4ea;
+}
+
+.card-super {
+  background: #ecf6ee;
+}
+
+.link-details {
+  color: #6159ff;
+  cursor: pointer;
+}
+
+.income-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.sider-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.default-button {
+  border-radius: 2px;
+  border: 1px solid #9984ff;
+  color: #6159ff;
+}
+
+.list-item-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-link-item {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: $base-secondary-1;
+  display: flex;
+  align-items: center;
+  height: 34px;
+  padding: 6px 8px !important;
+  gap: 8px;
+  border-radius: 4px;
+  width: 100%;
+
+  a {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-align: inherit;
+    color: inherit;
+  }
+}
+
+.item-hover {
+  &:hover {
+    background-color: $brand-secondary-pale !important;
+    color: $brand-primary !important;
+  }
+}
+
+.item-active {
+  background: $brand-primary;
+  color: $base-color-white !important;
+}
+
+.menu-footer {
+  padding: 0;
+}
+
+.menu-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  height: 52px;
+  padding: 4px 2px 4px 2px;
+  box-shadow: 0px -8px 12px 2px #2000540a;
+
+  @media screen and (min-width: $s) {
+    height: 82px;
+    padding: 24px 16px;
+  }
+}
+
+.menu-footer-item {
+  font-family: "Inter";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #8c8c8c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  display: flex;
+  padding: 6px 12px !important;
+  border-radius: 4px;
+  width: 66px;
+
+  &:hover {
+    background-color: $brand-secondary-pale !important;
+    color: $brand-primary !important;
+  }
+
+  @media screen and (min-width: $s) {
+    flex-direction: row;
+    width: 100%;
+    gap: 8px;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+
+.footer-item-active {
+  color: $brand-primary !important;
+  &:hover {
+    color: $brand-primary !important;
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-color: $brand-primary !important;
+    color: $base-color-white !important;
+
+    &:hover {
+      background-color: $brand-primary !important;
+      color: $base-color-white !important;
+    }
+  }
+}
+
+.style-overflow {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.tasks-count {
+  width: 16px;
+  display: flex;
+  background: $brand-primary;
+  border-radius: 50%;
+  justify-content: center;
+  justify-self: flex-end;
+  align-items: center;
+  font-family: "Inter";
+  height: 16px;
+  font-weight: 500;
+
+  color: #fff !important;
+
+  @media screen and (min-width: $tablet) {
+    background: #383494;
+  }
+  @media screen and (min-width: $s) {
+    background: #383494;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.tasks-count-not {
+  width: 16px;
+  display: flex;
+  background: $brand-primary;
+  border-radius: 50%;
+  height: 16px;
+  justify-content: center;
+  justify-self: flex-end;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 500;
+  color: #fff !important;
+
+  @media screen and (min-width: $s) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.tasks-inner {
+  position: absolute;
+  display: flex;
+  top: 4px;
+  left: 32px;
+  justify-content: flex-end;
+
+  @media screen and (min-width: $s) {
+    position: static;
+  }
+  @media screen and (min-width: $m) {
+    flex-grow: 1;
+  }
+}
+
+.info-drop {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  z-index: 1;
+  padding: 32px 24px;
+
+  @media screen and (min-width: $l) {
+    padding: 34px 24px;
+  }
+
+  @media screen and (min-width: $xl) {
+    padding: 38px 24px;
+  }
+}
+
+.text-menu {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $base-additional-grey;
+  max-width: 200px;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: initial;
+  align-self: center;
+}
+
+.text-menu-no-break {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $base-additional-grey;
+  text-wrap: nowrap;
+}
+
+.text-menu-percent {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $base-additional-grey;
+
+  align-self: center;
+}
+.divider-menu {
+  height: 20px;
+  width: 1px;
+  border-radius: 4px;
+  background-color: $base-secondary-pale;
+}
+
+.menu-inner-wrapper {
+  display: flex;
+
+  gap: 16px;
+}
+.menu-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+
+  @media screen and (min-width: $m) {
+    gap: 16px;
+    flex-direction: row;
+  }
+}
+
+.button-menu {
+  width: 100%;
+}
+
+.menu-title {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.menu-name {
+  display: flex;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-inn {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.menu-fio {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $brand-primary;
+  max-width: 220px;
+}
+
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.menu-info-wrapper {
+  background-color: $brand-secondary-pale;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 8px;
+}
+
+.dropdown-main {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid $brand-secondary-pale;
+  box-shadow: 0px 8px 16px 4px #2000541f;
+  margin-top: 24px;
+
+  @media screen and (min-width: $m) {
+    margin-top: 12px;
+  }
+}
+
+.button-icon {
+  padding: 0;
+  margin: 0;
+  border: none;
+  height: auto;
+  background-color: inherit;
+  display: flex;
+
+  &:hover {
+    background-color: inherit !important;
+  }
+}

@@ -1,0 +1,288 @@
+@import "../../../ui-kit/theme/colors.scss";
+$mobile: 320px;
+$tablet: 768px;
+$s: 1024px;
+$m: 1280px;
+$l: 1440px;
+$xl: 1920px;
+$xxl: 2560px;
+
+.type-item-select .ant-select-option-selected {
+  border-radius: 0 !important;
+}
+
+.type-item-select.ant-select-dropdown .ant-select-item {
+  border-radius: 0 !important;
+}
+
+.type-item-select .ant-select-selector {
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 100px !important;
+
+  padding: 4px 12px;
+  border-radius: 100px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: $tablet) {
+    justify-content: flex-start;
+  }
+}
+
+.type-income .ant-select-selector {
+  background: #f0f0ff !important;
+  color: #6159ff !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+
+  &:hover {
+    background: #f0f0ff !important;
+    color: $brand-additional-dark !important;
+  }
+}
+
+.type-income .ant-select-open .ant-select-selector {
+  background-color: $brand-primary !important;
+  color: $base-color-white !important;
+}
+
+.type-income .ant-select-arrow {
+  color: #6159ff !important;
+}
+
+.type-income .ant-select-open .ant-select-arrow {
+  color: $base-color-white !important;
+}
+
+.type-income .ant-select-open .ant-select-selector .income-inner {
+  color: $base-color-white !important;
+}
+
+.type-income .ant-select-open .ant-select-selector .income-inner svg rect {
+  fill: $brand-primary !important;
+}
+
+.type-back .ant-select-selector {
+  background: #ecf9ff !important;
+  color: #158fe8 !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+
+  &:hover {
+    background: #ecf9ff !important;
+    color: $blue-additional-dark !important;
+  }
+}
+
+.type-back .ant-select-open .ant-select-selector {
+  background-color: $blue-primary !important;
+  color: $base-color-white !important;
+}
+
+.type-back .ant-select-arrow {
+  color: #158fe8 !important;
+}
+
+.type-back .ant-select-open .ant-select-arrow {
+  color: $base-color-white !important;
+}
+
+.type-back .ant-select-open .ant-select-selector .back-inner {
+  color: $base-color-white !important;
+}
+
+.type-back .ant-select-open .ant-select-selector .back-inner svg rect {
+  fill: $blue-primary !important;
+}
+
+.type-non .ant-select-selector {
+  background: #f0f0f0 !important;
+  color: #505050 !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+
+  &:hover {
+    background: #f0f0f0 !important;
+    color: $base-primary-dark !important;
+  }
+}
+.type-non .ant-select-open .ant-select-selector {
+  background-color: $base-additional-grey !important;
+  color: $base-color-white !important;
+}
+
+.type-non .ant-select-arrow {
+  color: #505050 !important;
+}
+
+.type-non .ant-select-open .ant-select-arrow {
+  color: $base-color-white !important;
+}
+
+.type-non .ant-select-open .ant-select-selector .non-inner {
+  color: $base-color-white !important;
+}
+
+.type-non .ant-select-open .ant-select-selector .non-inner svg rect {
+  fill: $base-additional-grey !important;
+}
+
+.type-taxes .ant-select-selector {
+  background: #f6ffed !important;
+  color: #389e0d !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+
+  &:hover {
+    background: #f6ffed !important;
+    color: $green-additional-dark !important;
+  }
+}
+
+.type-taxes .ant-select-open .ant-select-selector {
+  background-color: $green-primary !important;
+  color: $base-color-white !important;
+}
+
+.type-taxes .ant-select-arrow {
+  color: #389e0d !important;
+}
+
+.type-taxes .ant-select-open .ant-select-arrow {
+  color: $base-color-white !important;
+}
+
+.type-taxes .ant-select-open .ant-select-selector .taxes-inner {
+  color: $base-color-white !important;
+}
+
+.ant-select-item-option-content .taxes-inner .inner-icon-2 {
+  color: #389e0d !important;
+}
+
+.ant-select-item-option-content .back-inner .inner-icon-2 {
+  color: #158fe8 !important;
+}
+
+.ant-select-item-option-content .non-inner .inner-icon-2 {
+  color: #505050 !important;
+}
+
+.ant-select-item-option-content .income-inner .inner-icon-2 {
+  color: #6159ff !important;
+}
+
+.ant-select-item-option-content .type-content-type .inner-icon-2 {
+  color: #6159ff !important;
+}
+
+.type-item-select .ant-select-selection-item {
+  border: none !important;
+  padding-inline-end: 0px !important;
+}
+
+.type-item-select .ant-select-selector .ant-select-selection-search-input {
+  padding: 0 !important;
+}
+
+.filter-collapse .ant-collapse-content-box {
+  padding: 0 !important;
+  border-radius: 4px 0px 0px 0px;
+  border: 1px solid $brand-secondary-pale !important;
+}
+
+.filter-collapse {
+  background-color: #fff !important;
+}
+
+.filter-collapse .ant-collapse-header {
+  padding: 8px !important;
+  border: 1px solid $brand-secondary-pale !important;
+}
+
+.taxes-drawer .ant-drawer-content-wrapper {
+  width: 100% !important;
+}
+
+.taxes-drawer .ant-drawer-header {
+  border: none !important;
+}
+
+.taxes-drawer .ant-drawer-body {
+  padding: 14px !important;
+}
+
+.hide-sources .ant-collapse-header {
+  width: 160px;
+  padding-bottom: 0 !important;
+}
+
+.hide-sources .ant-collapse-header-text {
+  width: 130px;
+}
+.hide-sources .ant-collapse-content-box {
+  padding: 0 !important;
+}
+
+.ant-list-items .sources-list-item:hover {
+  @media screen and (min-width: $s) {
+    border-radius: 8px;
+    background-color: $brand-secondary-pale !important;
+    cursor: pointer;
+    margin-left: -8px;
+    padding-left: 8px;
+  }
+}
+
+.ant-list-item {
+  height: 36px;
+}
+
+.delete-fly-icon .ant-btn:hover {
+  background-color: $brand-secondary-pale !important;
+  padding: 0;
+}
+
+.ant-list-item:hover .delete-fly-icon {
+  opacity: 1;
+}
+
+.ant-list-itemr:not(:hover) .delete-fly-icon {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.datepicker .ant-picker-input > input::placeholder {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: $base-secondary-1 !important;
+}
+
+.select-operations-custom .ant-select-dropdown-placement-bottomLeft {
+  width: 250px !important;
+}
+
+.type-content-type {
+  height: 24px;
+}
+
+.ant-select-selection-item .back-inner {
+  justify-content: center;
+}
+
+.ant-select-selection-item .income-inner {
+  justify-content: center;
+}
+
+.ant-select-selection-item .taxes-inner {
+  justify-content: center;
+}
+
+.ant-select-selection-item .non-inner {
+  justify-content: center;
+}

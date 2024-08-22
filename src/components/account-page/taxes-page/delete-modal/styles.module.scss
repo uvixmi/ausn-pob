@@ -1,0 +1,82 @@
+$mobile: 320px;
+$tablet: 768px;
+$s: 1024px;
+$m: 1280px;
+$l: 1440px;
+$xl: 1920px;
+$xxl: 2560px;
+
+.button-item-enter {
+  margin-top: 0 !important;
+  @media screen and (min-width: $s) {
+    width: 50%;
+    margin: 0 !important;
+  }
+}
+
+.button-item-cancel {
+  @media screen and (min-width: $s) {
+    width: 50%;
+    margin: 0 !important;
+  }
+}
+
+.buttons-row {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+
+  @media screen and (min-width: $s) {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 0;
+  }
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.heading-text {
+  font-family: "Inter";
+  font-size: 20px !important;
+  font-weight: 600;
+  line-height: 28px !important;
+  text-align: left;
+  color: #141414;
+  margin-top: 4px;
+  margin-bottom: 0 !important;
+
+  @media screen and (min-width: $s) {
+    margin-top: 8px;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+}
+
+.description-text {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #505050;
+
+  @media screen and (min-width: $s) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: $s) {
+    gap: 32px;
+    padding: 12px 16px;
+  }
+}

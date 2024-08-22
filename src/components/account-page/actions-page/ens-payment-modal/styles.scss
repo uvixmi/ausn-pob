@@ -1,0 +1,45 @@
+@import "../../../../ui-kit/theme/colors.scss";
+@import "../../../../ui-kit/theme/fonts.scss";
+$tablet: 768px;
+$s: 1024px;
+$m: 1280px;
+$l: 1440px;
+$xl: 1920px;
+$xxl: 2560px;
+
+.modal-payment-ens .ant-modal-content {
+  border-radius: 4px;
+  padding: 24px;
+
+  @media screen and (min-width: $s) {
+    padding: 40px;
+    height: 100vh;
+  }
+}
+
+.modal-payment-ens .ant-modal-body {
+  height: 100%;
+}
+
+.modal-select-ens .ant-select-selector {
+  border-radius: 0px;
+}
+
+.payment-collapse .ant-collapse-item .ant-collapse-header {
+  padding-left: 0;
+  padding-bottom: 8px !important;
+}
+
+.payment-collapse .ant-collapse-item .ant-collapse-content-box {
+  padding-left: 0;
+  padding-top: 0 !important;
+}
+
+.modal-select-ens .ant-select-selection-search > input::placeholder {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: $base-secondary-1 !important;
+}

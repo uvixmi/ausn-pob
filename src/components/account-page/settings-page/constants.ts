@@ -1,0 +1,41 @@
+export const CONTENT = {
+  SETTINGS_HEADING: "Настройки",
+  BUTTON_NOTIFICATIONS: "Настроить уведомления",
+  BUTTON_FEEDBACK: "Обратная связь",
+  TEXT_INN: "ИНН",
+  TEXT_TAXSYSTEM: "Система налогообложения",
+  TEXT_TAXOBJECT: "Объект налогообожения",
+  TEXT_TAX_RATE: "Ставка налога",
+  TEXT_DATE_BEGIN: "Дата начала расчёта",
+  TEXT_DATE_REGISTRATION: "Дата регистрации",
+  TEXT_OKTMO: "ОКТМО",
+  TEXT_CODE_IFNS: "ИФНС",
+  TEXT_DEFAULT_CODE:
+    "Межрайонная инспекция ФНС России №4 по Республике Дагестан",
+  TAXMODE_HEADING: "Налоговый режим",
+  CONTACT_HEADING: "Контактные данные",
+  TEXT_EMAIL: "Электронная почта",
+  TEXT_PHONE: "Номер телефона",
+  BUTTON_CHANGE_PASSWORD: "Сменить пароль",
+  BUTTON_OFF_SERVICE: "Отключить сервис",
+  BUTTON_OFF_PROFILE: "Выйти из профиля",
+  TAX_INSPECTION_HEADING: "Налоговая инспекция",
+  BUTTON_REFRESH_INN: "Обновить по ИНН",
+  BUTTON_EDIT: "Редактировать",
+  BUTTON_CHANGES_HISTORY: "История изменений",
+  TEXT_ADDITIONAL_INFO: "Дополнительно",
+  TEXT_YEAR_BEGIN: "Год начала расчёта в сервисе",
+  TEXT_DOCUMENTS: "Документы",
+  LINK_OFERTA: "Оферта →",
+  LINK_APPLICATION: "Пользовательское соглашение →",
+  TOOLPTIP_YEAR:
+    "Если вы хотите изменить год начала расчета, напишите об этом в Чате поддержки",
+}
+
+export const TAX_SYSTEM: Record<string, string> = {
+  usn_d: "УСН Доходы",
+  usn_d_r: "УСН Доходы - Расходы",
+  patent: "Патент",
+  eshn: "ЕСХН",
+  osn: "Общая система НО",
+}
