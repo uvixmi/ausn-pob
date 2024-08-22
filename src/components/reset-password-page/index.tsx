@@ -17,7 +17,8 @@ import cn from "classnames"
 import "./styles.scss"
 import { LogoMainIcon } from "../main-page/logo-icon-main"
 import { useMediaQuery } from "@react-hook/media-query"
-import { ResetPasswordImage } from "./images/reset-password"
+
+import { RegisterWelcomeImage as ResetPasswordImage } from "../authorization-page/images/register-welcome"
 import { isErrorResponse, validateEmail } from "./utils"
 import { jwtDecode } from "jwt-decode"
 
