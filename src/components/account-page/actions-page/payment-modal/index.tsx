@@ -417,7 +417,7 @@ export const PaymentModal = ({
                             }
                           >
                             <DatePicker
-                              style={{ borderRadius: "4px", height: "34px" }}
+                              style={{ borderRadius: "6px", height: "34px" }}
                               className={cn(styles["datepicker-style"])}
                               locale={locale}
                               format={dateFormat}

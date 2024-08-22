@@ -149,7 +149,7 @@ export const OffSourceModal = ({
 
                 <DatePicker
                   placeholder={CONTENT.DATEPICKER_PLACEHOLDER}
-                  style={{ borderRadius: "4px", height: "32px" }}
+                  style={{ borderRadius: "6px", height: "32px" }}
                   maxDate={dayjs(formatDateString(), dateFormat)}
                   locale={locale}
                   format={dateFormat}

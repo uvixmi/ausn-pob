@@ -924,7 +924,7 @@ export const TaxesPage = () => {
                 allowClear
                 ref={startDateRef}
                 placeholder={"Дата с"}
-                style={{ borderRadius: "4px" }}
+                style={{ borderRadius: "6px" }}
                 className={cn("datepicker", styles["datepicker-item"])}
                 minDate={
                   currentUser.tax_date_begin

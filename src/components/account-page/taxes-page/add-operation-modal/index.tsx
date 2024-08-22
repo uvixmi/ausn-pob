@@ -457,7 +457,7 @@ export const AddOperationModal = ({
                     >
                       <DatePicker
                         placeholder={CONTENT.DATEPICKER_PLACEHOLDER}
-                        style={{ borderRadius: "4px", height: "34px" }}
+                        style={{ borderRadius: "6px", height: "34px" }}
                         className={cn(
                           "picker-operation",
                           styles["datepicker-style"]
