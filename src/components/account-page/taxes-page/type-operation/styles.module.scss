@@ -1,3 +1,5 @@
+@import "../../../../ui-kit/theme/colors.scss";
+
 .type-inner {
   padding: 4px 12px;
   border-radius: 100px;
@@ -18,21 +20,21 @@
 }
 
 .type-income {
-  background: #fff7e6;
-  color: #f9951a;
+  background: $oragne-secondary-pale;
+  color: $orange-primary;
 }
 
 .type-back {
-  background: #ecf9ff;
-  color: #158fe8;
+  background: $blue-secondary-pale;
+  color: $blue-primary;
 }
 
 .type-non {
-  background: #f0f0f0;
-  color: #505050;
+  background: $base-secondary-pale;
+  color: $base-additional-grey;
 }
 
 .type-taxes {
-  background: #f6ffed;
-  color: #389e0d;
+  background: $green-secondary-pale;
+  color: $green-primary;
 }

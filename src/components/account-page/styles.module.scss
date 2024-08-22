@@ -10,7 +10,7 @@ $xxl: 2560px;
 .left-sider-wrapper {
   background-color: #fff;
   width: 200px;
-  border-right: 1px solid #d9d9d9;
+  border-right: 1px solid $brand-secondary-pale;
 }
 
 .left-sider-inner {
@@ -33,7 +33,7 @@ $xxl: 2560px;
 
 .right-sider-wrapper {
   background-color: #fff;
-  border-left: 1px solid #d9d9d9;
+  border-left: 1px solid $brand-secondary-pale;
   padding: 20px 40px;
 }
 
@@ -70,7 +70,7 @@ $xxl: 2560px;
 
 .remark-button {
   border-radius: 4px;
-  background: #6159ff;
+  background: $brand-primary;
   color: #fff;
   height: 100%;
   width: 220px;
@@ -84,7 +84,7 @@ $xxl: 2560px;
   justify-content: space-between;
   background: linear-gradient(
     67.21deg,
-    #f0f0ff 0%,
+    $brand-secondary-pale 0%,
     rgba(245, 245, 245, 0.45) 100%
   );
   flex-grow: 1;
@@ -101,7 +101,7 @@ $xxl: 2560px;
 }
 
 .card-item {
-  border: 1px solid #d9d9d9;
+  border: 1px solid $brand-secondary-pale;
   border-radius: 4px;
   min-width: 216px;
   display: flex;
@@ -175,16 +175,8 @@ $xxl: 2560px;
   text-align: left;
 }
 
-.card-fix {
-  background: #fff4ea;
-}
-
-.card-super {
-  background: #ecf6ee;
-}
-
 .link-details {
-  color: #6159ff;
+  color: $brand-primary;
   cursor: pointer;
 }
 
@@ -196,12 +188,6 @@ $xxl: 2560px;
 .sider-buttons {
   display: flex;
   gap: 8px;
-}
-
-.default-button {
-  border-radius: 2px;
-  border: 1px solid #9984ff;
-  color: #6159ff;
 }
 
 .list-item-right {
@@ -269,7 +255,7 @@ $xxl: 2560px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  color: #8c8c8c;
+  color: $base-secondary-1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -333,10 +319,10 @@ $xxl: 2560px;
   color: #fff !important;
 
   @media screen and (min-width: $tablet) {
-    background: #383494;
+    background: $brand-additional-dark;
   }
   @media screen and (min-width: $s) {
-    background: #383494;
+    background: $brand-additional-dark;
     width: 20px;
     height: 20px;
   }

@@ -399,9 +399,13 @@ export const RegisterPage = ({
   const [maxSlider, setMaxSlider] = useState(6)
   useEffect(() => {
     if (sno == TaxSystemType.UsnDR) {
-      setRate("15%"), setMarks(marks2), setMaxSlider(15)
+      setRate("15%")
+      setMarks(marks2)
+      setMaxSlider(15)
     } else if (sno == TaxSystemType.UsnD) {
-      setRate("6%"), setMarks(marks1), setMaxSlider(6)
+      setRate("6%")
+      setMarks(marks1)
+      setMaxSlider(6)
     } else setRate(undefined)
   }, [sno])
 
@@ -653,21 +657,21 @@ export const RegisterPage = ({
       <ConfigProvider
         theme={{
           token: {
-            colorLink: "#505050",
-            colorPrimary: "#6159ff",
+            colorLink: "#080D13A6",
+            colorPrimary: "#4AA9FF",
             fontFamily: "Inter",
           },
           components: {
             Steps: {
-              colorPrimary: "#6159ff",
-              colorPrimaryActive: "#6159ff",
-              colorBgLayout: "#F0F0FF",
+              colorPrimary: "#4AA9FF",
+              colorPrimaryActive: "#4AA9FF",
+              colorBgLayout: "#EFF7FF",
             },
             Progress: {
-              defaultColor: "#6159ff",
+              defaultColor: "#4AA9FF",
             },
             Radio: {
-              colorText: "#6159ff",
+              colorText: "#4AA9FF",
             },
           },
         }}

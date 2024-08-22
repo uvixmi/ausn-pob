@@ -1,3 +1,5 @@
+@import "../../../../ui-kit/theme/colors.scss";
+
 $mobile: 320px;
 $tablet: 768px;
 $s: 1024px;
@@ -19,9 +21,9 @@ $xxl: 2560px;
 
 .button-item-enter {
   border-radius: 4px;
-  color: #cf133c;
+  color: $red-primary;
   height: 32px;
-  border: 1px solid #cf133c;
+  border: 1px solid $red-primary;
   width: 50%;
 }
 
@@ -76,7 +78,7 @@ $xxl: 2560px;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color: #505050;
+  color: $base-additional-grey;
 }
 
 .text-input {
@@ -86,11 +88,11 @@ $xxl: 2560px;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: #141414;
+  color: $base-primary-dark;
 }
 
 .necessary {
-  color: #cf133c;
+  color: $red-primary;
   font-family: "Inter";
   font-size: 10px;
   font-weight: 600;
@@ -107,7 +109,7 @@ $xxl: 2560px;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: #6159ff;
+  color: $brand-primary;
 }
 
 .input-item {
@@ -127,7 +129,7 @@ $xxl: 2560px;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  color: #505050;
+  color: $base-additional-grey;
   display: flex;
   gap: 4px;
 }
@@ -142,7 +144,7 @@ $xxl: 2560px;
   font-weight: 600;
   line-height: 28px !important;
   text-align: left;
-  color: #141414;
+  color: $base-primary-dark;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   max-width: 330px;

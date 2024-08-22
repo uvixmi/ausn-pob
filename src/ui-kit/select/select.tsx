@@ -39,7 +39,8 @@ export const SelectOne = ({
       theme={{
         components: {
           Select: {
-            optionActiveBg: "#F0F0FF",
+            optionActiveBg: "#F5F5F6",
+            optionSelectedBg: "#EFF7FF",
             optionPadding: "6px 12px",
             multipleItemBg: "#FFFFFF",
           },

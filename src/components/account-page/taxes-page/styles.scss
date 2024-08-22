@@ -32,8 +32,8 @@ $xxl: 2560px;
 }
 
 .type-income .ant-select-selector {
-  background: #f0f0ff !important;
-  color: #6159ff !important;
+  background: $brand-secondary-pale !important;
+  color: $brand-primary !important;
   padding-left: 8px !important;
   padding-right: 8px !important;
 
@@ -49,7 +49,7 @@ $xxl: 2560px;
 }
 
 .type-income .ant-select-arrow {
-  color: #6159ff !important;
+  color: $brand-primary !important;
 }
 
 .type-income .ant-select-open .ant-select-arrow {
@@ -65,13 +65,13 @@ $xxl: 2560px;
 }
 
 .type-back .ant-select-selector {
-  background: #ecf9ff !important;
-  color: #158fe8 !important;
+  background: $blue-secondary-pale !important;
+  color: $blue-primary !important;
   padding-left: 8px !important;
   padding-right: 8px !important;
 
   &:hover {
-    background: #ecf9ff !important;
+    background: $blue-secondary-pale !important;
     color: $blue-additional-dark !important;
   }
 }
@@ -82,7 +82,7 @@ $xxl: 2560px;
 }
 
 .type-back .ant-select-arrow {
-  color: #158fe8 !important;
+  color: $blue-primary !important;
 }
 
 .type-back .ant-select-open .ant-select-arrow {
@@ -98,13 +98,13 @@ $xxl: 2560px;
 }
 
 .type-non .ant-select-selector {
-  background: #f0f0f0 !important;
-  color: #505050 !important;
+  background: $base-secondary-pale !important;
+  color: $base-additional-grey !important;
   padding-left: 8px !important;
   padding-right: 8px !important;
 
   &:hover {
-    background: #f0f0f0 !important;
+    background: $base-secondary-pale !important;
     color: $base-primary-dark !important;
   }
 }
@@ -114,7 +114,7 @@ $xxl: 2560px;
 }
 
 .type-non .ant-select-arrow {
-  color: #505050 !important;
+  color: $base-additional-grey !important;
 }
 
 .type-non .ant-select-open .ant-select-arrow {
@@ -130,13 +130,13 @@ $xxl: 2560px;
 }
 
 .type-taxes .ant-select-selector {
-  background: #f6ffed !important;
-  color: #389e0d !important;
+  background: $green-secondary-pale !important;
+  color: $green-primary !important;
   padding-left: 8px !important;
   padding-right: 8px !important;
 
   &:hover {
-    background: #f6ffed !important;
+    background: $green-secondary-pale !important;
     color: $green-additional-dark !important;
   }
 }
@@ -147,7 +147,7 @@ $xxl: 2560px;
 }
 
 .type-taxes .ant-select-arrow {
-  color: #389e0d !important;
+  color: $green-primary !important;
 }
 
 .type-taxes .ant-select-open .ant-select-arrow {
@@ -159,23 +159,23 @@ $xxl: 2560px;
 }
 
 .ant-select-item-option-content .taxes-inner .inner-icon-2 {
-  color: #389e0d !important;
+  color: $green-primary !important;
 }
 
 .ant-select-item-option-content .back-inner .inner-icon-2 {
-  color: #158fe8 !important;
+  color: $blue-primary !important;
 }
 
 .ant-select-item-option-content .non-inner .inner-icon-2 {
-  color: #505050 !important;
+  color: $base-additional-grey !important;
 }
 
 .ant-select-item-option-content .income-inner .inner-icon-2 {
-  color: #6159ff !important;
+  color: $brand-primary !important;
 }
 
 .ant-select-item-option-content .type-content-type .inner-icon-2 {
-  color: #6159ff !important;
+  color: $brand-primary !important;
 }
 
 .type-item-select .ant-select-selection-item {

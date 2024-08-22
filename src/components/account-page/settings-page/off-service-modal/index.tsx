@@ -62,7 +62,10 @@ export const OffServiceModal = ({ isOpen, setOpen }: OffServiceModalProps) => {
   const navigate = useNavigate()
   const { logout } = useAuth()
   const leaveService = async () => {
-    setOpen(false), navigate("/main"), logout(), clearAll()
+    setOpen(false)
+    navigate("/main")
+    logout()
+    clearAll()
     setServiceDisabled(false)
   }
   const isMobile = useMediaQuery("(max-width: 767px)")

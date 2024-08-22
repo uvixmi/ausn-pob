@@ -88,7 +88,7 @@ $xxl: 2560px;
   max-width: 440px;
 }
 .default-text {
-  color: #141414;
+  color: $base-primary-dark;
 }
 
 .pay-inner {
@@ -96,7 +96,7 @@ $xxl: 2560px;
   padding: 8px 16px;
   border-radius: 4px;
   width: 100%;
-  background: #6159ff;
+  background: $brand-primary;
   color: #fff;
 }
 
@@ -105,13 +105,13 @@ $xxl: 2560px;
   height: 30px;
   padding: 6px 8px 6px 12px;
   border-radius: 2px;
-  border: 1px solid #505050;
+  border: 1px solid $base-additional-grey;
   font-family: "Inter";
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
   text-align: center;
-  color: #141414;
+  color: $base-primary-dark;
 }
 
 .payment-inner {
@@ -131,7 +131,7 @@ $xxl: 2560px;
 }
 
 .remark-text {
-  color: #505050;
+  color: $base-additional-grey;
   font-family: "Inter";
   font-size: 12px;
   font-weight: 400;
@@ -175,7 +175,7 @@ $xxl: 2560px;
 }
 
 .update-wrapper {
-  background: #f0f0ff;
+  background: $brand-secondary-pale;
 
   border-radius: 8px;
   padding: 16px;
@@ -223,7 +223,7 @@ $xxl: 2560px;
 }
 
 .necessary {
-  color: #cf133c;
+  color: $red-primary;
   font-family: "Inter";
   font-size: 10px;
   font-weight: 600;
@@ -247,7 +247,7 @@ $xxl: 2560px;
 
   &:focus {
     border: 1px solid $brand-primary;
-    box-shadow: 0px 0px 0px 2px #f0f0ff;
+    box-shadow: 0px 0px 0px 2px $brand-secondary-pale;
   }
 }
 

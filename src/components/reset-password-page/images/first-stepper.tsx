@@ -5,15 +5,30 @@ export const FirstStepper = (
   props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
 ) => (
   <svg
-    width="56"
-    height="8"
-    viewBox="0 0 56 8"
+    width="136"
+    height="4"
+    viewBox="0 0 136 4"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <rect width="24" height="8" rx="4" fill="#6159FF" />
-    <rect x="32" width="8" height="8" rx="4" fill="#D1D1D1" />
-    <rect x="48" width="8" height="8" rx="4" fill="#D1D1D1" />
+    <rect width="40" height="4" rx="2" fill="#4AA9FF" />
+    <rect width="20" height="4" rx="2" fill="#4AA9FF" />
+    <rect
+      x="48"
+      width="40"
+      height="4"
+      rx="2"
+      fill="#080D13"
+      fill-opacity="0.08"
+    />
+    <rect
+      x="96"
+      width="40"
+      height="4"
+      rx="2"
+      fill="#080D13"
+      fill-opacity="0.08"
+    />
   </svg>
 )

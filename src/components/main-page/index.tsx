@@ -51,7 +51,9 @@ export const MainPage = () => {
 
   useEffect(() => {
     if (loading === "failed") {
-      logout(), clearAll(), navigate("/login")
+      logout()
+      clearAll()
+      navigate("/login")
     }
   }, [loading])
 
@@ -232,7 +234,9 @@ export const MainPage = () => {
           <div className={styles["register-header"]}>
             <LogoIcon
               onClick={() => {
-                logout(), navigate("/login"), clearAll()
+                logout()
+                navigate("/login")
+                clearAll()
               }}
               type="icon-custom"
               className={styles["logo-item"]}

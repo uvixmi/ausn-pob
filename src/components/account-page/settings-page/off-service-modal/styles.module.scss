@@ -15,7 +15,7 @@ $xxl: 2560px;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: #505050;
+  color: $base-additional-grey;
 }
 
 .title-description {
@@ -25,7 +25,7 @@ $xxl: 2560px;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color: #505050;
+  color: $base-additional-grey;
 }
 
 .ant-modal {
@@ -75,7 +75,7 @@ $xxl: 2560px;
   max-width: 440px;
 }
 .default-text {
-  color: #141414;
+  color: $base-primary-dark;
 }
 
 .cancel-button {
@@ -83,7 +83,7 @@ $xxl: 2560px;
   padding: 8px 16px;
   border-radius: 4px;
   width: 100%;
-  color: #6159ff;
+  color: $brand-primary;
   background: #fff;
   display: flex;
   justify-content: center;
@@ -95,7 +95,7 @@ $xxl: 2560px;
   padding: 8px 16px;
   border-radius: 4px;
   width: 100%;
-  background: #6159ff;
+  background: $brand-primary;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -107,13 +107,13 @@ $xxl: 2560px;
   height: 30px;
   padding: 6px 8px 6px 12px;
   border-radius: 2px;
-  border: 1px solid #505050;
+  border: 1px solid $base-additional-grey;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: -0.20000000298023224px;
   text-align: center;
-  color: #141414;
+  color: $base-primary-dark;
 }
 
 .payment-inner {
@@ -135,7 +135,7 @@ $xxl: 2560px;
   }
 }
 .remark-text {
-  color: #505050;
+  color: $base-additional-grey;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -150,7 +150,7 @@ $xxl: 2560px;
 
 .text-left-part {
   width: 120px;
-  color: #8c8c8c;
+  color: $base-secondary-1;
 }
 
 .text-right-part {
@@ -169,7 +169,7 @@ $xxl: 2560px;
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
-  color: #8c8c8c;
+  color: $base-secondary-1;
 }
 
 .error-text {
@@ -190,7 +190,7 @@ $xxl: 2560px;
 }
 
 .necessary {
-  color: #cf133c;
+  color: $red-primary;
   font-family: "Inter";
   font-size: 14px;
   font-weight: 500;

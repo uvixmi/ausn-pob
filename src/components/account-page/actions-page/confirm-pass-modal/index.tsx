@@ -83,18 +83,6 @@ export const ConfirmPassModal = ({
           <Text className={styles["modal-title"]}>{CONTENT.TITLE_PASSED}</Text>
           <div className={styles["list-wrapper"]}>
             <Text className={styles["text-style"]}>{fnsText}</Text>
-            {/*<div>
-              <Text className={styles["text-style"]}>
-                {CONTENT.SECOND_LINE}
-              </Text>
-              <Link
-                className={styles["text-style"]}
-                style={{ color: "#6159ff" }}
-                onClick={() => navigate("/reports")}
-              >
-                {CONTENT.LINK_REPORT}
-              </Link>
-  </div>*/}
           </div>
           <div className={styles["buttons-row"]}>
             <ButtonOne
@@ -111,7 +99,8 @@ export const ConfirmPassModal = ({
             <ButtonOne
               key="back"
               onClick={() => {
-                setOpen(false), handleSentReport(task_code, year, report_code)
+                setOpen(false)
+                handleSentReport(task_code, year, report_code)
               }}
               className={styles["button-item-enter"]}
             >

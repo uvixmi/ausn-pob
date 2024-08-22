@@ -70,7 +70,7 @@ $xxl: 2560px;
 }
 
 .input-item {
-  border-radius: 2px;
+  border-radius: 6px;
 }
 
 .links-wrapper {
@@ -189,15 +189,14 @@ $xxl: 2560px;
 
 .image-register {
   margin-bottom: 30px;
-  width: 161px;
-  height: 77px;
+  width: 100px;
+  height: 100px;
 
   @media screen and (min-width: $s) {
     margin-top: 0px;
     margin-bottom: 0px;
-
-    width: 255px;
-    height: 122px;
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -276,7 +275,7 @@ $xxl: 2560px;
   padding: 6px 12px;
   display: flex;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 6px;
   color: $base-primary-dark;
   font-family: "Inter" !important;
   font-weight: 400;
@@ -306,17 +305,17 @@ $xxl: 2560px;
 
   &:focus {
     border: 1px solid $brand-primary !important;
-    box-shadow: 0px 0px 0px 2px #f0f0ff;
+    box-shadow: 0px 0px 0px 2px $brand-secondary-pale;
   }
 
   &:focus-within {
     border: 1px solid $brand-primary !important;
-    box-shadow: 0px 0px 0px 2px #f0f0ff;
+    box-shadow: 0px 0px 0px 2px $brand-secondary-pale;
   }
 
   &:active {
     border: 1px solid $brand-primary !important;
-    box-shadow: 0px 0px 0px 2px #f0f0ff;
+    box-shadow: 0px 0px 0px 2px $brand-secondary-pale;
 
     &:hover {
       border: 1px solid $brand-primary !important;

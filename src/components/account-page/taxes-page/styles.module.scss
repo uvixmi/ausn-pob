@@ -11,7 +11,7 @@ $xxl: 2560px;
 .left-sider-wrapper {
   background-color: #fff;
   width: 200px;
-  border-right: 1px solid #d9d9d9;
+  border-right: 1px solid $brand-secondary-pale;
 }
 
 .left-sider-inner {
@@ -70,7 +70,7 @@ $xxl: 2560px;
 
 .download-icon {
   font-size: 14px;
-  color: #6159ff;
+  color: $brand-primary;
 }
 
 .logo-inner {
@@ -87,7 +87,7 @@ $xxl: 2560px;
 
 .remark-button {
   border-radius: 4px;
-  background: #6159ff;
+  background: $brand-primary;
   color: #fff;
   height: 100%;
   width: 220px;
@@ -101,7 +101,7 @@ $xxl: 2560px;
   justify-content: space-between;
   background: linear-gradient(
     67.21deg,
-    #f0f0ff 0%,
+    $brand-secondary-pale 0%,
     rgba(245, 245, 245, 0.45) 100%
   );
   flex-grow: 1;
@@ -123,7 +123,7 @@ $xxl: 2560px;
 }
 
 .card-item {
-  border: 1px solid #d9d9d9;
+  border: 1px solid $brand-secondary-pale;
   border-radius: 4px;
   min-width: 216px;
   display: flex;
@@ -234,16 +234,8 @@ $xxl: 2560px;
   text-align: left;
 }
 
-.card-fix {
-  background: #fff4ea;
-}
-
-.card-super {
-  background: #ecf6ee;
-}
-
 .link-details {
-  color: #6159ff;
+  color: $brand-primary;
   cursor: pointer;
 }
 
@@ -260,15 +252,15 @@ $xxl: 2560px;
 .default-button {
   border-radius: 2px;
   width: 100%;
-  color: #6159ff;
-  border: 1px solid #d1d1d1;
+  color: $brand-primary;
+  border: 1px solid $base-secondary-2;
   text-align: center;
 }
 
 .kudir-button {
   border-radius: 2px;
-  color: #6159ff;
-  border: 1px solid #d1d1d1;
+  color: $brand-primary;
+  border: 1px solid $base-secondary-2;
   text-align: center;
 }
 
@@ -284,10 +276,10 @@ $xxl: 2560px;
 .non-source-button {
   border-radius: 2px;
   max-width: 250px;
-  background-color: #6159ff;
+  background-color: $brand-primary;
   color: #ffffff;
 
-  border: 1px solid #d1d1d1;
+  border: 1px solid $base-secondary-2;
   text-align: center;
 }
 
@@ -351,7 +343,7 @@ $xxl: 2560px;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
-  color: #8c8c8c;
+  color: $base-secondary-1;
   &:first-child {
     width: 36%;
     @media screen and (min-width: $l) {
@@ -384,7 +376,7 @@ $xxl: 2560px;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: #6159ff;
+  color: $brand-primary;
   padding: 12px 0px;
 
   @media screen and (min-width: $s) {
@@ -406,7 +398,7 @@ $xxl: 2560px;
 
   @media screen and (min-width: $s) {
     &:hover {
-      background-color: #f0f0ff;
+      background-color: $brand-secondary-pale;
       cursor: pointer;
     }
   }
@@ -441,7 +433,7 @@ $xxl: 2560px;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color: #141414;
+  color: $base-primary-dark;
 }
 
 .source-text {
@@ -450,7 +442,7 @@ $xxl: 2560px;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: #8c8c8c;
+  color: $base-secondary-1;
 }
 
 .currency-income {
@@ -459,7 +451,7 @@ $xxl: 2560px;
   line-height: 24px;
   letter-spacing: 0em;
 
-  color: #141414;
+  color: $base-primary-dark;
 
   @media screen and (min-width: $tablet) {
     text-align: right;
@@ -507,8 +499,8 @@ $xxl: 2560px;
 }
 
 .type-income {
-  background: #f0f0ff;
-  color: #6159ff;
+  background: $brand-secondary-pale;
+  color: $brand-primary;
   padding-right: 14px;
 }
 
@@ -517,35 +509,35 @@ $xxl: 2560px;
 }
 
 .type-income-3 {
-  color: #6159ff !important;
+  color: $brand-primary !important;
 }
 
 .type-back-3 {
-  color: #158fe8 !important;
+  color: $blue-primary !important;
 }
 
 .type-non-3 {
-  color: #505050 !important;
+  color: $base-additional-grey !important;
 }
 .type-taxes-3 {
-  color: #389e0d !important;
+  color: $green-primary !important;
 }
 
 .type-back {
-  background: #ecf9ff;
-  color: #158fe8;
+  background: $blue-secondary-pale;
+  color: $blue-primary;
   padding-right: 14px;
 }
 
 .type-non {
-  background: #f0f0f0;
-  color: #505050;
+  background: $base-secondary-pale;
+  color: $base-additional-grey;
   padding-right: 14px;
 }
 
 .type-taxes {
-  background: #f6ffed;
-  color: #389e0d;
+  background: $green-secondary-pale;
+  color: $green-primary;
   padding-right: 14px;
 }
 
@@ -651,7 +643,7 @@ $xxl: 2560px;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color: #141414;
+  color: $base-primary-dark;
   max-width: 140px;
 }
 
@@ -661,7 +653,7 @@ $xxl: 2560px;
   line-height: 20px;
   letter-spacing: 0em;
 
-  color: #8c8c8c;
+  color: $base-secondary-1;
 }
 
 .non-taxes {
@@ -702,7 +694,7 @@ $xxl: 2560px;
   line-height: 22px;
   letter-spacing: 0em;
 
-  color: #8c8c8c;
+  color: $base-secondary-1;
 
   @media screen and (min-width: $tablet) {
     text-align: right;
@@ -741,7 +733,7 @@ $xxl: 2560px;
 
 .sider-icon {
   font-size: 16px;
-  color: #8c8c8c;
+  color: $base-secondary-1;
 }
 
 .operation-type-wrapper {
@@ -847,7 +839,7 @@ $xxl: 2560px;
 .divider {
   width: 100%;
   height: 1px;
-  background: #f0f0f0;
+  background: $base-secondary-pale;
   border-radius: 4px 0px 0px 0px;
   opacity: 0px;
   margin-top: 12px;
@@ -891,7 +883,7 @@ $xxl: 2560px;
   font-weight: 600;
   line-height: 28px;
   text-align: left;
-  color: #141414;
+  color: $base-primary-dark;
   margin-top: 28px;
 }
 
@@ -901,7 +893,7 @@ $xxl: 2560px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  color: #8c8c8c;
+  color: $base-secondary-1;
 }
 
 .amount-nowrap {

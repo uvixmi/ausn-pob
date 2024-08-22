@@ -119,12 +119,12 @@ export const AnalysisEnsModal = ({ isOpen, setOpen }: ConfirmModalProps) => {
                 </Text>
                 <MaskedInput
                   mask={PhoneMask}
-                  style={{ borderRadius: "4px" }}
+                  style={{ borderRadius: "6px" }}
                   className={cn(styles["input-item"])}
                   value={phone}
                   onChange={(event) => {
-                    setPhone(event.target.value),
-                      setPhoneError(validatePhone(event.target.value))
+                    setPhone(event.target.value)
+                    setPhoneError(validatePhone(event.target.value))
                   }}
                   placeholder={CONTENT.PHONE_PLACEHOLDER}
                   status={phoneError ? "error" : undefined}

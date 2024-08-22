@@ -166,7 +166,7 @@ export const SettingsPage = () => {
                         }
                       >
                         <InfoCircleOutlined
-                          style={{ color: "#6159FF" }}
+                          style={{ color: "#4AA9FF" }}
                           size={14}
                         />
                       </Tooltip>
@@ -270,7 +270,7 @@ export const SettingsPage = () => {
                   {CONTENT.TEXT_YEAR_BEGIN + " "}
                   <Tooltip title={CONTENT.TOOLPTIP_YEAR}>
                     <InfoCircleOutlined
-                      style={{ color: "#6159FF" }}
+                      style={{ color: "#4AA9FF" }}
                       size={14}
                     />
                   </Tooltip>

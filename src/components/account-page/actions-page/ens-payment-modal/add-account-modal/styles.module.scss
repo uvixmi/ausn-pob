@@ -23,7 +23,7 @@ $xxl: 2560px;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color: #505050;
+  color: $base-additional-grey;
 }
 
 .description-item {
@@ -38,7 +38,7 @@ $xxl: 2560px;
 }
 
 .necessary {
-  color: #cf133c;
+  color: $red-primary;
   font-family: "Inter";
   font-size: 10px;
   font-weight: 600;
@@ -58,7 +58,7 @@ $xxl: 2560px;
 
 .generate-button {
   border-radius: 4px;
-  background: #6159ff;
+  background: $brand-primary;
   color: #fff;
   height: 100%;
   width: 100%;
@@ -81,7 +81,7 @@ $xxl: 2560px;
 }
 
 .default-text {
-  color: #141414;
+  color: $base-primary-dark;
 }
 
 .text-disabled {

@@ -75,7 +75,7 @@ export const ResetPasswordPage = ({
       })
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     //@ts-ignore
-    window.carrotquest == null
+
     function deleteCookie() {
       document.cookie = "carrotquest_uid=; max-age=0; path=/"
       document.cookie = "carrotquest_auth_token=; max-age=0; path=/"
@@ -269,9 +269,9 @@ export const ResetPasswordPage = ({
         theme={{
           components: {
             Checkbox: {
-              colorPrimary: "#6159FF",
-              colorPrimaryHover: "#6159FF",
-              colorPrimaryBorder: "#6159FF",
+              colorPrimary: "#4AA9FF",
+              colorPrimaryHover: "#4AA9FF",
+              colorPrimaryBorder: "#4AA9FF",
               controlInteractiveSize: 22,
               fontSize: 14,
               lineHeight: 14,

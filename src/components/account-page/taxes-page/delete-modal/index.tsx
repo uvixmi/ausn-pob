@@ -88,7 +88,8 @@ export const DeleteOperationModal = ({
               type="danger"
               key="delete"
               onClick={() => {
-                setOpen(false), id && deleteOperation(id)
+                setOpen(false)
+                id && deleteOperation(id)
               }}
               className={styles["button-item-enter"]}
             >

@@ -113,10 +113,12 @@ export const OffSourceModal = ({
       <Modal
         open={isOpen}
         onOk={() => {
-          setOpen(false), clear()
+          setOpen(false)
+          clear()
         }}
         onCancel={() => {
-          setOpen(false), clear()
+          setOpen(false)
+          clear()
         }}
         footer={null}
       >

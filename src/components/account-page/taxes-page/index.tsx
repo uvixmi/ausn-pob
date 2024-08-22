@@ -375,7 +375,9 @@ export const TaxesPage = () => {
         dispatch(fetchSourcesInfo())
       } catch (error) {
         if ((error as ApiError).status === 422) {
-          logout(), clearAll(), navigate("/login")
+          logout()
+          clearAll()
+          navigate("/login")
         }
         setSourcesIsLoading("")
         setSourcesLoaded(false)
@@ -409,7 +411,9 @@ export const TaxesPage = () => {
       setSourcesError(false)
     } catch (error) {
       if ((error as ApiError).status === 422) {
-        logout(), clearAll(), navigate("/login")
+        logout()
+        clearAll()
+        navigate("/login")
       }
       setSourcesLoaded(false)
       setSourcesError(true)
@@ -696,7 +700,9 @@ export const TaxesPage = () => {
       } catch (error) {
         console.log(error)
         if ((error as ApiError).status === 422) {
-          logout(), clearAll(), navigate("/login")
+          logout()
+          clearAll()
+          navigate("/login")
         } else {
           setTaxesErrorImage(true)
         }
@@ -1155,10 +1161,10 @@ export const TaxesPage = () => {
         theme={{
           components: {
             DatePicker: {
-              cellActiveWithRangeBg: "#f0f0ff;",
-              cellHoverWithRangeBg: "#6159FF",
+              cellActiveWithRangeBg: "#EFF7FF",
+              cellHoverWithRangeBg: "#4AA9FF",
               hoverBorderColor: "#8c8c8c",
-              activeBorderColor: "#6159FF",
+              activeBorderColor: "#4AA9FF",
               colorTextDisabled: "#d1d1d1",
               fontFamily: "Inter",
               fontSize: 14,
@@ -1344,10 +1350,9 @@ export const TaxesPage = () => {
                                     })}
                                     key={operation.id}
                                     onMouseEnter={() => {
-                                      setHoveredIndex(operation.id),
-                                        setHoveredAmount(
-                                          operation.markup.amount
-                                        )
+                                      setHoveredIndex(operation.id)
+
+                                      setHoveredAmount(operation.markup.amount)
                                     }}
                                   >
                                     <div className={styles["source-inner"]}>
@@ -2004,18 +2009,14 @@ export const TaxesPage = () => {
                                     ? 5
                                     : null
                                 )
-                                item.type === "account" &&
-                                item.is_integrated === true
-                                  ? item.bank_bik &&
-                                    item.sub_name &&
+
+                                if (
+                                  item.type === "account" &&
+                                  item.is_integrated === true
+                                ) {
+                                  if (item.bank_bik && item.sub_name)
                                     failedBank(item.bank_bik, item.sub_name)
-                                  : item.type === "ofd" &&
-                                    item.is_integrated === true
-                                  ? failedOfd(item.name)
-                                  : item.type === "marketplace" &&
-                                    item.is_integrated === true
-                                  ? failedMarketplace(item.name)
-                                  : null
+                                }
                               }}
                             >
                               {"Повторить"}
@@ -2251,18 +2252,13 @@ export const TaxesPage = () => {
                                     ? 5
                                     : null
                                 )
-                                item.type === "account" &&
-                                item.is_integrated === true
-                                  ? item.bank_bik &&
-                                    item.sub_name &&
+                                if (
+                                  item.type === "account" &&
+                                  item.is_integrated === true
+                                ) {
+                                  if (item.bank_bik && item.sub_name)
                                     failedBank(item.bank_bik, item.sub_name)
-                                  : item.type === "ofd" &&
-                                    item.is_integrated === true
-                                  ? failedOfd(item.name)
-                                  : item.type === "marketplace" &&
-                                    item.is_integrated === true
-                                  ? failedMarketplace(item.name)
-                                  : null
+                                }
                               }}
                             >
                               {"Повторить"}
@@ -2642,18 +2638,13 @@ export const TaxesPage = () => {
                                       ? 5
                                       : null
                                   )
-                                  item.type === "account" &&
-                                  item.is_integrated === true
-                                    ? item.bank_bik &&
-                                      item.sub_name &&
+                                  if (
+                                    item.type === "account" &&
+                                    item.is_integrated === true
+                                  ) {
+                                    if (item.bank_bik && item.sub_name)
                                       failedBank(item.bank_bik, item.sub_name)
-                                    : item.type === "ofd" &&
-                                      item.is_integrated === true
-                                    ? failedOfd(item.name)
-                                    : item.type === "marketplace" &&
-                                      item.is_integrated === true
-                                    ? failedMarketplace(item.name)
-                                    : null
+                                  }
                                 }}
                               >
                                 {"Повторить"}
@@ -2910,18 +2901,13 @@ export const TaxesPage = () => {
                                       ? 5
                                       : null
                                   )
-                                  item.type === "account" &&
-                                  item.is_integrated === true
-                                    ? item.bank_bik &&
-                                      item.sub_name &&
+                                  if (
+                                    item.type === "account" &&
+                                    item.is_integrated === true
+                                  ) {
+                                    if (item.bank_bik && item.sub_name)
                                       failedBank(item.bank_bik, item.sub_name)
-                                    : item.type === "ofd" &&
-                                      item.is_integrated === true
-                                    ? failedOfd(item.name)
-                                    : item.type === "marketplace" &&
-                                      item.is_integrated === true
-                                    ? failedMarketplace(item.name)
-                                    : null
+                                  }
                                 }}
                               >
                                 {"Повторить"}

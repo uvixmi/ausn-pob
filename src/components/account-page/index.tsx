@@ -236,11 +236,11 @@ export const AccountPage = ({
       <ConfigProvider
         theme={{
           token: {
-            colorLink: "#505050",
-            colorPrimary: "#6159ff",
+            colorLink: "#080D13A6",
+            colorPrimary: "#4AA9FF",
             colorBgLayout: "#fff",
             colorBgContainerDisabled: "#fff",
-            colorTextDisabled: "#141414",
+            colorTextDisabled: "#080D13",
             lineHeight: 1.14285714285,
             fontSize: 12,
           },
@@ -249,8 +249,8 @@ export const AccountPage = ({
               siderBg: "#fff",
             },
             Button: {
-              colorBgContainerDisabled: "#F0F0F0",
-              borderColorDisabled: "#F0F0F0",
+              colorBgContainerDisabled: "#F5F5F6",
+              borderColorDisabled: "#F5F5F6",
               colorTextDisabled: "#D1D1D1",
             },
           },

@@ -70,7 +70,7 @@ $xxl: 2560px;
   max-width: 440px;
 }
 .default-text {
-  color: #141414;
+  color: $base-primary-dark;
 }
 
 .pay-inner {
@@ -78,7 +78,7 @@ $xxl: 2560px;
   padding: 8px 16px;
   border-radius: 4px;
   width: 100%;
-  background: #6159ff;
+  background: $brand-primary;
   color: #fff;
 }
 
@@ -87,7 +87,7 @@ $xxl: 2560px;
   height: 30px;
   padding: 6px 8px 6px 12px;
   border-radius: 2px;
-  border: 1px solid #505050;
+  border: 1px solid $base-additional-grey;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -154,7 +154,7 @@ $xxl: 2560px;
 }
 
 .update-wrapper {
-  background: #f0f0ff;
+  background: $brand-secondary-pale;
 
   border-radius: 8px;
   padding: 16px;
@@ -202,7 +202,7 @@ $xxl: 2560px;
 }
 
 .necessary {
-  color: #cf133c;
+  color: $red-primary;
   font-family: "Inter";
   font-size: 10px;
   font-weight: 600;

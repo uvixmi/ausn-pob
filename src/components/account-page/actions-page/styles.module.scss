@@ -12,7 +12,7 @@ $xxl: 2560px;
 .left-sider-wrapper {
   background-color: #fff;
   width: 200px;
-  border-right: 1px solid #d9d9d9;
+  border-right: 1px solid $brand-secondary-pale;
 }
 
 .left-sider-inner {
@@ -34,7 +34,7 @@ $xxl: 2560px;
 
 .right-sider-wrapper {
   background-color: #fff;
-  border-left: 1px solid #d9d9d9;
+  border-left: 1px solid $brand-secondary-pale;
   padding-top: 116px;
   padding-left: 16px;
   padding-right: 16px;
@@ -104,7 +104,7 @@ $xxl: 2560px;
 
 .remark-button {
   border-radius: 4px;
-  background: #6159ff;
+  background: $brand-primary;
   color: #fff;
   height: 100%;
 
@@ -145,7 +145,7 @@ $xxl: 2560px;
 }
 
 .card-item {
-  border: 1px solid #d9d9d9;
+  border: 1px solid $brand-secondary-pale;
   border-radius: 4px;
   min-width: 216px;
   display: flex;
@@ -221,16 +221,8 @@ $xxl: 2560px;
   text-align: left;
 }
 
-.card-fix {
-  background: #fff4ea;
-}
-
-.card-super {
-  background: #ecf6ee;
-}
-
 .link-details {
-  color: #6159ff;
+  color: $brand-primary;
   cursor: pointer;
 
   @media screen and (min-width: $l) {
@@ -251,8 +243,8 @@ $xxl: 2560px;
 
 .default-button {
   border-radius: 2px;
-  border: 1px solid #9984ff;
-  color: #6159ff;
+  border: 1px solid $brand-secondary-1;
+  color: $brand-primary;
 }
 
 .list-item-right {
@@ -261,7 +253,7 @@ $xxl: 2560px;
 }
 
 .row-item {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $brand-secondary-pale;
   width: 100%;
   min-height: 178px;
   padding: 24px 0px 24px;
@@ -424,7 +416,7 @@ $xxl: 2560px;
   font-size: 20px !important;
   font-weight: 600 !important;
   line-height: 28px !important;
-  color: #141414;
+  color: $base-primary-dark;
 }
 
 .amount-pay {
@@ -534,7 +526,7 @@ $xxl: 2560px;
 }
 
 .update-wrapper {
-  background: #f0f0ff;
+  background: $brand-secondary-pale;
   height: 194px;
   border-radius: 8px;
   padding: 16px;
@@ -578,7 +570,7 @@ $xxl: 2560px;
   line-height: 20px;
   letter-spacing: -0.005em;
   text-align: left;
-  color: #6159ff;
+  color: $brand-primary;
 }
 
 .declaration-wrapper {
@@ -687,7 +679,7 @@ $xxl: 2560px;
 
 .sider-icon {
   font-size: 19px;
-  color: #9984ff;
+  color: $brand-secondary-1;
 }
 
 .left-part-row {
@@ -706,7 +698,7 @@ $xxl: 2560px;
 }
 
 .ordinary-icon {
-  color: #8c8c8c !important;
+  color: $base-secondary-1 !important;
 }
 
 .soon-icon {
@@ -860,7 +852,7 @@ $xxl: 2560px;
   padding: 1px 8px;
   gap: 3px;
   border-radius: 8px;
-  background: #f0f0f0;
+  background: $brand-secondary-pale;
   width: 100%;
   min-width: 210px;
   justify-content: center;

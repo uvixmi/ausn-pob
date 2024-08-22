@@ -29,7 +29,10 @@ export const QuitModal = ({ isOpen, setOpen }: QuitModalProps) => {
   const navigate = useNavigate()
   const { logout } = useAuth()
   const leaveService = async () => {
-    setOpen(false), navigate("/main"), logout(), clearAll()
+    setOpen(false)
+    navigate("/main")
+    logout()
+    clearAll()
     setServiceDisabled(false)
   }
 

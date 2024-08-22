@@ -292,7 +292,9 @@ export const ActionsPage = () => {
         errorTasks()
 
         if ((error as ApiError).status === 422) {
-          logout(), clearAll(), navigate("/login")
+          logout()
+          clearAll()
+          navigate("/login")
         }
       }
     } catch (error) {
@@ -328,7 +330,9 @@ export const ActionsPage = () => {
       console.error("Error during API call:", error)
       errorDownload()
       if ((error as ApiError).status === 422) {
-        logout(), clearAll(), navigate("/login")
+        logout()
+        clearAll()
+        navigate("/login")
       }
     }
   }
@@ -359,7 +363,9 @@ export const ActionsPage = () => {
       console.error("Error during API call:", error)
       errorDownload()
       if ((error as ApiError).status === 422) {
-        logout(), clearAll(), navigate("/login")
+        logout()
+        clearAll()
+        navigate("/login")
       }
     }
   }
@@ -405,7 +411,9 @@ export const ActionsPage = () => {
       setBanners(linkedBanners)
     } catch (error) {
       if ((error as ApiError).status === 422) {
-        logout(), clearAll(), navigate("/login")
+        logout()
+        clearAll()
+        navigate("/login")
       }
     }
   }
@@ -621,7 +629,7 @@ export const ActionsPage = () => {
               colorText: "#fff",
             },
             Progress: {
-              defaultColor: "#6159ff",
+              defaultColor: "#4AA9FF",
             },
           },
         }}
@@ -726,7 +734,7 @@ export const ActionsPage = () => {
               </Text>
               <Link
                 className={styles["declaration-link-operations"]}
-                style={{ color: "#6159ff", whiteSpace: "nowrap" }}
+                style={{ color: "#4AA9FF", whiteSpace: "nowrap" }}
                 onClick={openAnalysis}
               >
                 {CONTENT.TEXT_DETAILS}
@@ -912,13 +920,13 @@ export const ActionsPage = () => {
                                   showInfo={false}
                                   strokeColor={
                                     item.due_date <= getCurrentDate()
-                                      ? "#CF133C"
+                                      ? "#D43D3D"
                                       : compareDates(
                                           item.due_date,
                                           getCurrentDate()
                                         )
                                       ? "#FF8D00"
-                                      : "#6159FF"
+                                      : "#4AA9FF"
                                   }
                                 />
                               )}

@@ -110,7 +110,8 @@ export const ConfirmModal = ({
                     handleUpdate()
                   }
                 : () => {
-                    setOpen(false), navigate("/non-target")
+                    setOpen(false)
+                    navigate("/non-target")
                   }
             }
           >

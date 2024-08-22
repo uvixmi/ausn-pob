@@ -859,7 +859,7 @@ export const AddSourceModal = ({
                     <div className={styles["dragger-text"]}>
                       <Text
                         className={styles["text-title"]}
-                        style={{ color: "#6159FF", textAlign: "center" }}
+                        style={{ color: "#4AA9FF", textAlign: "center" }}
                       >
                         {CONTENT.TEXT_LOADING_TITLE}
                       </Text>
@@ -1202,7 +1202,7 @@ export const AddSourceModal = ({
                       {isMobile && (
                         <Link
                           className={styles["instructions"]}
-                          style={{ color: "#6159ff" }}
+                          style={{ color: "#4AA9FF" }}
                           target="_blink"
                           href="https://www.google.com/url?q=https://drive.google.com/drive/u/1/folders/1yFkiwQuDDGUrHxINyXWVs8x3wtf_aLw_&sa=D&source=docs&ust=1709622100158746&usg=AOvVaw10cI6RyE9EYj20GIbB9DCu"
                         >
@@ -1213,7 +1213,7 @@ export const AddSourceModal = ({
                     {!isMobile && (
                       <Link
                         className={styles["instructions"]}
-                        style={{ color: "#6159ff" }}
+                        style={{ color: "#4AA9FF" }}
                         target="_blink"
                         href="https://www.google.com/url?q=https://drive.google.com/drive/u/1/folders/1yFkiwQuDDGUrHxINyXWVs8x3wtf_aLw_&sa=D&source=docs&ust=1709622100158746&usg=AOvVaw10cI6RyE9EYj20GIbB9DCu"
                       >
@@ -1618,7 +1618,7 @@ export const AddSourceModal = ({
                     </Text>
                     <Link
                       className={styles["instructions"]}
-                      style={{ color: "#6159ff" }}
+                      style={{ color: "#4AA9FF" }}
                       target="_blink"
                       href="https://www.google.com/url?q=https://drive.google.com/drive/u/1/folders/1yFkiwQuDDGUrHxINyXWVs8x3wtf_aLw_&sa=D&source=docs&ust=1709622100158746&usg=AOvVaw10cI6RyE9EYj20GIbB9DCu"
                     >
@@ -1724,7 +1724,7 @@ export const AddSourceModal = ({
                         <div className={styles["dragger-text"]}>
                           <Text
                             className={styles["text-title"]}
-                            style={{ color: "#6159FF" }}
+                            style={{ color: "#4AA9FF" }}
                           >
                             {CONTENT.TEXT_LOADING_TITLE}
                           </Text>
@@ -2127,7 +2127,7 @@ export const AddSourceModal = ({
                     {CONTENT.TEXT_MARKETPLACE_OZON_DESCRIPTION}
                     <Link
                       className={styles["instructions"]}
-                      style={{ color: "#6159ff" }}
+                      style={{ color: "#4AA9FF" }}
                       target="_blink"
                       href="https://www.google.com/url?q=https://drive.google.com/drive/u/1/folders/1yFkiwQuDDGUrHxINyXWVs8x3wtf_aLw_&sa=D&source=docs&ust=1709622100158746&usg=AOvVaw10cI6RyE9EYj20GIbB9DCu"
                     >
@@ -2232,7 +2232,7 @@ export const AddSourceModal = ({
                         <div className={styles["dragger-text"]}>
                           <Text
                             className={styles["text-title"]}
-                            style={{ color: "#6159FF", textAlign: "center" }}
+                            style={{ color: "#4AA9FF", textAlign: "center" }}
                           >
                             {CONTENT.TEXT_LOADING_TITLE}
                           </Text>
@@ -2422,7 +2422,7 @@ export const AddSourceModal = ({
                         <div className={styles["dragger-text"]}>
                           <Text
                             className={styles["text-title"]}
-                            style={{ color: "#6159FF", textAlign: "center" }}
+                            style={{ color: "#4AA9FF", textAlign: "center" }}
                           >
                             {CONTENT.TEXT_LOADING_TITLE}
                           </Text>
@@ -2608,7 +2608,7 @@ export const AddSourceModal = ({
                     {CONTENT.TEXT_MARKETPLACE_WB_DESCRIPTION}
                     <Link
                       className={styles["instructions"]}
-                      style={{ color: "#6159ff" }}
+                      style={{ color: "#4AA9FF" }}
                       target="_blink"
                       href="https://www.google.com/url?q=https://drive.google.com/drive/u/1/folders/1yFkiwQuDDGUrHxINyXWVs8x3wtf_aLw_&sa=D&source=docs&ust=1709622100158746&usg=AOvVaw10cI6RyE9EYj20GIbB9DCu"
                     >

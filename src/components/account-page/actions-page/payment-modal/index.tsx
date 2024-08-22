@@ -253,10 +253,10 @@ export const PaymentModal = ({
         theme={{
           components: {
             DatePicker: {
-              cellActiveWithRangeBg: "#f0f0ff;",
-              cellHoverWithRangeBg: "#6159FF",
+              cellActiveWithRangeBg: "#EFF7FF",
+              cellHoverWithRangeBg: "#4AA9FF",
               hoverBorderColor: "#8c8c8c",
-              activeBorderColor: "#6159FF",
+              activeBorderColor: "#4AA9FF",
               colorTextDisabled: "#d1d1d1",
               fontFamily: "Inter",
               fontSize: 14,

@@ -24,7 +24,7 @@ $xxl: 2560px;
   width: 100%;
   padding: 12px;
   border-radius: 4px;
-  border: 1px solid #f0f0f0;
+  border: 1px solid $brand-secondary-pale;
   gap: 8px;
   flex-direction: column;
 
@@ -49,7 +49,7 @@ $xxl: 2560px;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: #8c8c8c;
+  color: $base-secondary-1;
   text-wrap: wrap;
   @media screen and (min-width: $s) {
     text-wrap: nowrap;
@@ -63,11 +63,11 @@ $xxl: 2560px;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
-  color: #8c8c8c;
+  color: $base-secondary-1;
 }
 
 .title-modal {
-  color: #141414;
+  color: $base-primary-dark;
   font-family: "Inter";
   font-weight: 600;
   font-size: 20px;
@@ -86,7 +86,7 @@ $xxl: 2560px;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color: #505050;
+  color: $base-additional-grey;
 }
 
 .text-title-ofd {
@@ -105,7 +105,7 @@ $xxl: 2560px;
 }
 
 .upload-icon {
-  color: #6159ff;
+  color: $brand-primary;
   font-size: 24px;
 }
 
@@ -133,12 +133,12 @@ $xxl: 2560px;
 }
 
 .dragger-loading {
-  border: 1px solid #ceb7ff;
-  background: #f0f0ff;
+  border: 1px solid $brand-secondary-2;
+  background: $brand-secondary-pale;
 }
 
 .dragger-loaded {
-  border: 1px solid #389e0d;
+  border: 1px solid $green-primary;
 }
 
 .dragger-text {
@@ -159,7 +159,7 @@ $xxl: 2560px;
 }
 
 .arrow-left-icon {
-  color: #6159ff;
+  color: $brand-primary;
 }
 
 .button-back {
@@ -167,7 +167,7 @@ $xxl: 2560px;
   height: 34px;
   padding: 5px 16px;
   border-radius: 2px;
-  border: 1px solid #d1d1d1;
+  border: 1px solid $base-secondary-2;
   display: flex;
   gap: 4px;
 }
@@ -179,7 +179,7 @@ $xxl: 2560px;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: #6159ff;
+  color: $brand-primary;
 }
 
 .upload-wrapper {
@@ -219,7 +219,7 @@ $xxl: 2560px;
 .bank-item {
   padding: 16px;
   border-radius: 2px;
-  border: 1px solid #f0f0f0;
+  border: 1px solid $brand-secondary-pale;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,14 +249,14 @@ $xxl: 2560px;
   line-height: 24px;
   letter-spacing: 0em;
 
-  color: #141414;
+  color: $base-primary-dark;
 }
 
 .cashier-item {
   width: 141px;
   padding: 16px;
   border-radius: 2px;
-  border: 1px solid #f0f0f0;
+  border: 1px solid $brand-secondary-pale;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,7 +316,7 @@ $xxl: 2560px;
 
 .generate-button {
   border-radius: 4px;
-  background: #6159ff;
+  background: $brand-primary;
   color: #fff;
 
   width: 100%;
@@ -328,7 +328,7 @@ $xxl: 2560px;
   line-height: 22px;
   letter-spacing: -0.005em;
   text-align: left;
-  color: #505050;
+  color: $base-additional-grey;
 }
 
 .text-disabled {
@@ -341,7 +341,7 @@ $xxl: 2560px;
 }
 
 .default-text {
-  color: #141414;
+  color: $base-primary-dark;
 }
 .input-item {
   display: flex;
@@ -356,7 +356,7 @@ $xxl: 2560px;
 }
 
 .necessary {
-  color: #cf133c;
+  color: $red-primary;
   font-family: "Inter";
   font-size: 10px;
   font-weight: 600;
@@ -366,7 +366,7 @@ $xxl: 2560px;
 }
 
 .instructions {
-  color: #6159ff;
+  color: $brand-primary;
   font-family: "Inter";
   font-size: 16px;
   font-weight: 400;

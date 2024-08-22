@@ -18,25 +18,25 @@ $xxl: 2560px;
 }
 
 .custom-checkbox .ant-checkbox .ant-checkbox-inner {
-  border: 1px solid #d9d9d9; /* Граница по умолчанию */
+  border: 1px solid $brand-secondary-pale; /* Граница по умолчанию */
 
   /* Стили для состояния при наведении курсора */
   &:hover {
-    border-color: #d9d9d9 !important; /* Цвет границы при наведении */
+    border-color: $brand-secondary-pale !important; /* Цвет границы при наведении */
   }
 
   /* Медиа-запрос для экранов от размера $m и больше */
   @media screen and (min-width: $m) {
     &:hover {
-      border-color: #6159ff !important; /* Цвет границы при наведении для экранов от размера $m и больше */
+      border-color: $brand-primary !important; /* Цвет границы при наведении для экранов от размера $m и больше */
     }
   }
 }
 
 .custom-checkbox .ant-checkbox .ant-checkbox-inner:hover {
-  border-color: 1px solid #d9d9d9 !important;
+  border-color: 1px solid $brand-secondary-pale !important;
 
   @media screen and (min-width: $m) {
-    border-color: #6159ff !important; /* Цвет границы при наведении для экранов от размера $m и больше */
+    border-color: $brand-primary !important; /* Цвет границы при наведении для экранов от размера $m и больше */
   }
 }
