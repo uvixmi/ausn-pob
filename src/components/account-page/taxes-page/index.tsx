@@ -1213,7 +1213,7 @@ export const TaxesPage = () => {
                 <DownloadOutlined className={styles["download-icon"]} />
                 {CONTENT.BUTTON_DOWNLOAD_KUDIR}
               </ButtonOne>
-              <ButtonOne
+              {/*<ButtonOne
                 className={cn(
                   styles["buttons-row-item"],
                   styles["button-make"]
@@ -1225,7 +1225,7 @@ export const TaxesPage = () => {
                   style={{ marginInlineStart: "4px" }}
                 />
                 {CONTENT.BUTTON_ADD_OPERATION}
-              </ButtonOne>
+              </ButtonOne>*/}
             </div>
           </div>
 
@@ -1505,7 +1505,7 @@ export const TaxesPage = () => {
                                           </Tooltip>
                                         ) : null}
                                       </div>
-                                      {isMobile && (
+                                      {/*isMobile && (
                                         <Button
                                           className={cn(
                                             styles["no-border-button"],
@@ -1517,7 +1517,7 @@ export const TaxesPage = () => {
                                         >
                                           <DeleteOperationIcon />
                                         </Button>
-                                      )}
+                                      )*/}
                                     </div>
                                     <div className={styles["amount-inner"]}>
                                       <div
@@ -1572,7 +1572,7 @@ export const TaxesPage = () => {
                                         </Text>
                                       </div>
 
-                                      {!isMobile && (
+                                      {/*!isMobile && (
                                         <Tooltip title={CONTENT.DELETE_TOOLTIP}>
                                           <ButtonOne
                                             className={styles["delete-icon"]}
@@ -1584,7 +1584,7 @@ export const TaxesPage = () => {
                                             <DeleteOutlined />
                                           </ButtonOne>
                                         </Tooltip>
-                                      )}
+                                      )*/}
                                     </div>
                                   </div>
                                   {/*isMobile && (
@@ -1613,7 +1613,7 @@ export const TaxesPage = () => {
                             </Text>
                           </Text>
                         </div>
-                        <ButtonOne
+                        {/*<ButtonOne
                           className={styles["non-source-button"]}
                           onClick={() => setIsAddSourceOpen(true)}
                         >
@@ -1622,7 +1622,7 @@ export const TaxesPage = () => {
                             style={{ marginInlineStart: "4px" }}
                           />
                           {CONTENT.BUTTON_ADD_SOURCE_NON}
-                        </ButtonOne>
+                        </ButtonOne>*/}
                       </div>
                     ) : (
                       filteredLoadedEmpty &&
@@ -1889,7 +1889,7 @@ export const TaxesPage = () => {
                       style={{ borderBlockEnd: "none" }}
                     >
                       <div className={styles["left-source-name"]}>
-                        {item.state === "in_progress" ? (
+                        {/*item.state === "in_progress" ? (
                           item.link && item.link !== "" ? (
                             <Tooltip title={CONTENT.TOOLTIP_ORANGE}>
                               <InProgressOrangeIcon />
@@ -1930,7 +1930,7 @@ export const TaxesPage = () => {
                               </Button>
                             </Tooltip>
                           )
-                        )}
+                        )*/}
                         {item.short_name && item.short_name !== null ? (
                           <Tooltip
                             title={
@@ -1986,8 +1986,7 @@ export const TaxesPage = () => {
                                   convertReverseFormat(item.last_info)}
                               </Text>
                             </Tooltip>
-                          ) : item.state === "failed" ? (
-                            <Link
+                          ) : item.state === "failed" ? /*<Link
                               className={styles["source-link"]}
                               onClick={() => {
                                 isMobile && closeDrawer()
@@ -2020,17 +2019,15 @@ export const TaxesPage = () => {
                               }}
                             >
                               {"Повторить"}
-                            </Link>
-                          ) : item.state === "in_progress" &&
+                            </Link>*/ null : item.state === "in_progress" &&
                             item.link &&
-                            item.link !== "" ? (
-                            <Link className={styles["source-link"]}>
+                            item.link !==
+                              "" ? /*<Link className={styles["source-link"]}>
                               {"Подключить"}
-                            </Link>
-                          ) : (
+                            </Link>*/ null : (
                             CONTENT.NO_SOURCE
                           )}
-                          {!(item.state == "in_progress" && !item.link) ? (
+                          {/*!(item.state == "in_progress" && !item.link) ? (
                             <Tooltip
                               title={
                                 item.is_integrated === false &&
@@ -2131,7 +2128,7 @@ export const TaxesPage = () => {
                             </Tooltip>
                           ) : (
                             <div style={{ width: "26px" }}></div>
-                          )}
+                          )*/}
                         </div>
                       </div>
                     </List.Item>
@@ -2163,7 +2160,7 @@ export const TaxesPage = () => {
                       style={{ borderBlockEnd: "none" }}
                     >
                       <div className={styles["left-source-name"]}>
-                        {item.state === "in_progress" ? (
+                        {/*item.state === "in_progress" ? (
                           item.link && item.link !== "" ? (
                             <Tooltip title={CONTENT.TOOLTIP_ORANGE}>
                               <InProgressOrangeIcon />
@@ -2183,7 +2180,7 @@ export const TaxesPage = () => {
                           <Tooltip title={CONTENT.TOOLTIP_AUTO_INTEGRATED}>
                             <CompletedAutoIcon />
                           </Tooltip>
-                        ) : null}
+                        ) : null*/}
 
                         {item.short_name && item.short_name !== null ? (
                           <Tooltip
@@ -2229,8 +2226,7 @@ export const TaxesPage = () => {
                                   convertReverseFormat(item.last_info)}
                               </Text>
                             </Tooltip>
-                          ) : item.state === "failed" ? (
-                            <Link
+                          ) : item.state === "failed" ? /*<Link
                               className={styles["source-link"]}
                               onClick={() => {
                                 isMobile && closeDrawer()
@@ -2262,14 +2258,12 @@ export const TaxesPage = () => {
                               }}
                             >
                               {"Повторить"}
-                            </Link>
-                          ) : item.state === "in_progress" &&
+                            </Link>*/ null : item.state === "in_progress" &&
                             item.link &&
-                            item.link !== "" ? (
-                            <Link className={styles["source-link"]}>
+                            item.link !==
+                              "" ? /* <Link className={styles["source-link"]}>
                               {"Подключить"}
-                            </Link>
-                          ) : (
+                            </Link>*/ null : (
                             CONTENT.NO_SOURCE
                           )}
                           {!(item.state == "in_progress" && !item.link) ? (
@@ -2284,7 +2278,7 @@ export const TaxesPage = () => {
                                   : undefined
                               }
                             >
-                              {!(
+                              {/*!(
                                 item.state === "completed" && item.disable_date
                               ) ? (
                                 <Button
@@ -2359,7 +2353,7 @@ export const TaxesPage = () => {
                                 >
                                   <DeleteSourceIcon />
                                 </div>
-                              )}
+                              )*/}
                             </Tooltip>
                           ) : (
                             <div style={{ width: "26px" }}></div>
@@ -2460,7 +2454,7 @@ export const TaxesPage = () => {
                   <ArrowCounterIcon />
                   {CONTENT.SOURCE_MOBILE_UPDATE}
                 </ButtonOne>
-                <ButtonOne
+                {/*<ButtonOne
                   className={cn(
                     styles["buttons-row-item"],
                     styles["button-make"],
@@ -2476,7 +2470,7 @@ export const TaxesPage = () => {
                     style={{ marginInlineStart: "4px" }}
                   />
                   {CONTENT.BUTTON_ADD_OPERATION}
-                </ButtonOne>
+                </ButtonOne>*/}
               </div>
               {/*<div className={styles["sider-buttons"]}>
               <Button
@@ -2509,7 +2503,7 @@ export const TaxesPage = () => {
                         style={{ borderBlockEnd: "none" }}
                       >
                         <div className={styles["left-source-name"]}>
-                          {item.state === "in_progress" ? (
+                          {/*item.state === "in_progress" ? (
                             item.link && item.link !== "" ? (
                               <Tooltip
                                 title={CONTENT.TOOLTIP_ORANGE}
@@ -2557,7 +2551,7 @@ export const TaxesPage = () => {
                                 </Button>
                               </Tooltip>
                             )
-                          )}
+                          )*/}
                           {item.short_name && item.short_name !== null ? (
                             <Tooltip
                               title={
@@ -2615,8 +2609,7 @@ export const TaxesPage = () => {
                                     convertReverseFormat(item.last_info)}
                                 </Text>
                               </Tooltip>
-                            ) : item.state === "failed" ? (
-                              <Link
+                            ) : item.state === "failed" ? /*<Link
                                 className={styles["source-link"]}
                                 onClick={() => {
                                   isMobile && closeDrawer()
@@ -2648,17 +2641,15 @@ export const TaxesPage = () => {
                                 }}
                               >
                                 {"Повторить"}
-                              </Link>
-                            ) : item.state === "in_progress" &&
+                              </Link>*/ null : item.state === "in_progress" &&
                               item.link &&
-                              item.link !== "" ? (
-                              <Link className={styles["source-link"]}>
+                              item.link !==
+                                "" ? /*<Link className={styles["source-link"]}>
                                 {"Подключить"}
-                              </Link>
-                            ) : (
+                              </Link>*/ null : (
                               CONTENT.NO_SOURCE
                             )}
-                            {!(item.state == "in_progress" && !item.link) ? (
+                            {/*!(item.state == "in_progress" && !item.link) ? (
                               <Tooltip
                                 title={
                                   isMobile
@@ -2763,7 +2754,7 @@ export const TaxesPage = () => {
                               </Tooltip>
                             ) : (
                               <div style={{ width: "26px" }}></div>
-                            )}
+                            )*/}
                           </div>
                         </div>
                       </List.Item>
@@ -2792,7 +2783,7 @@ export const TaxesPage = () => {
                         style={{ borderBlockEnd: "none" }}
                       >
                         <div className={styles["left-source-name"]}>
-                          {item.state === "in_progress" ? (
+                          {/*item.state === "in_progress" ? (
                             item.link && item.link !== "" ? (
                               <Tooltip
                                 title={CONTENT.TOOLTIP_ORANGE}
@@ -2830,7 +2821,7 @@ export const TaxesPage = () => {
                             >
                               <CompletedAutoIcon />
                             </Tooltip>
-                          ) : null}
+                          ) : null*/}
 
                           {item.short_name && item.short_name !== null ? (
                             <Tooltip
@@ -2878,8 +2869,7 @@ export const TaxesPage = () => {
                                     convertReverseFormat(item.last_info)}
                                 </Text>
                               </Tooltip>
-                            ) : item.state === "failed" ? (
-                              <Link
+                            ) : item.state === "failed" ? /* <Link
                                 className={styles["source-link"]}
                                 onClick={() => {
                                   isMobile && closeDrawer()
@@ -2911,14 +2901,12 @@ export const TaxesPage = () => {
                                 }}
                               >
                                 {"Повторить"}
-                              </Link>
-                            ) : item.state === "in_progress" &&
+                              </Link>*/ null : item.state === "in_progress" &&
                               item.link &&
-                              item.link !== "" ? (
-                              <Link className={styles["source-link"]}>
+                              item.link !==
+                                "" ? /*<Link className={styles["source-link"]}>
                                 {"Подключить"}
-                              </Link>
-                            ) : (
+                              </Link>*/ null : (
                               CONTENT.NO_SOURCE
                             )}
                             {!(item.state == "in_progress" && !item.link) ? (
@@ -2936,7 +2924,7 @@ export const TaxesPage = () => {
                                     : undefined
                                 }
                               >
-                                {!(
+                                {/*!(
                                   item.state === "completed" &&
                                   item.disable_date
                                 ) ? (
@@ -3012,7 +3000,7 @@ export const TaxesPage = () => {
                                   >
                                     <DeleteSourceIcon />
                                   </div>
-                                )}
+                                )*/}
                               </Tooltip>
                             ) : (
                               <div style={{ width: "26px" }}></div>

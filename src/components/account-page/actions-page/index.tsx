@@ -673,7 +673,7 @@ export const ActionsPage = () => {
               )}
             </div>
             <div className={styles["right-header-part"]}>
-              {!isMediumSize && (
+              {/*   {!isMediumSize && (
                 <div className={styles["remark-text"]}>
                   <Text className={styles["remark-ens-text"]}>
                     {CONTENT.ENS_TEXT_DETAILS}
@@ -685,9 +685,9 @@ export const ActionsPage = () => {
                     {CONTENT.TEXT_DETAILS}
                   </Link>
                 </div>
-              )}
+              )}*/}
               <div className={styles["buttons-header"]}>
-                <ButtonOne
+                {/*<ButtonOne
                   onClick={() => openEnsModal()}
                   className={styles["header-button-item"]}
                 >
@@ -696,7 +696,7 @@ export const ActionsPage = () => {
                     style={{ marginInlineStart: "4px" }}
                   />
                   {CONTENT.BUTTON_ENS_TEXT}
-                </ButtonOne>
+                </ButtonOne>*/}
                 <ButtonOne
                   onClick={() => {
                     recalculation()
@@ -727,7 +727,7 @@ export const ActionsPage = () => {
               </div>
             </div>
           </div>
-          {isMediumSize && (
+          {/*isMediumSize && (
             <div className={styles["remark-text-medium"]}>
               <Text className={styles["remark-ens-text"]}>
                 {CONTENT.ENS_TEXT_DETAILS}
@@ -740,7 +740,7 @@ export const ActionsPage = () => {
                 {CONTENT.TEXT_DETAILS}
               </Link>
             </div>
-          )}
+          )*/}
           <div>
             {tasks &&
               tasks
@@ -1190,53 +1190,54 @@ export const ActionsPage = () => {
                               </ButtonOne>
                             </div>
                           ) : (
-                            <ButtonOne
-                              className={styles["amount-button"]}
-                              type="secondary"
+                            item.type === "report" && (
+                              <ButtonOne
+                                className={styles["amount-button"]}
+                                type="secondary"
+                                onClick={() =>
+                                  item.type === "report"
+                                    ? handleFormReport(
+                                        item.task_code,
+                                        item.year
+                                      )
+                                    : openEnsModal(item.due_amount)
+                                }
+                              >
+                                {item.type === "report" ? (
+                                  isForming &&
+                                  item.task_code === tasCodeForming &&
+                                  item.year === yearForming ? (
+                                    <Spin indicator={antIcon} />
+                                  ) : (
+                                    CONTENT.BUTTON_FORM
+                                  )
+                                ) : (
+                                  ""
+                                )}
+                              </ButtonOne>
+                            )
+                          )}
+                          {item.type === "report" && (
+                            <Button
+                              className={styles["paid-button"]}
                               onClick={() =>
                                 item.type === "report"
-                                  ? handleFormReport(item.task_code, item.year)
-                                  : openEnsModal(item.due_amount)
+                                  ? handleSentReport(
+                                      item.task_code,
+                                      item.year,
+                                      item.report_code
+                                    )
+                                  : item.due_amount &&
+                                    handleSentPayment(
+                                      item.due_amount.toString(),
+                                      item.year
+                                    )
                               }
                             >
-                              {item.type === "fixed_fees" ||
-                              item.type === "usn" ||
-                              item.type === "income_percentage" ? (
-                                CONTENT.BUTTON_TO_PAY
-                              ) : item.type === "report" ? (
-                                isForming &&
-                                item.task_code === tasCodeForming &&
-                                item.year === yearForming ? (
-                                  <Spin indicator={antIcon} />
-                                ) : (
-                                  CONTENT.BUTTON_FORM
-                                )
-                              ) : (
-                                ""
-                              )}
-                            </ButtonOne>
+                              <HideEyeIcon className={styles["hide-icon"]} />
+                              {CONTENT.BUTTON_PASSED}
+                            </Button>
                           )}
-                          <Button
-                            className={styles["paid-button"]}
-                            onClick={() =>
-                              item.type === "report"
-                                ? handleSentReport(
-                                    item.task_code,
-                                    item.year,
-                                    item.report_code
-                                  )
-                                : item.due_amount &&
-                                  handleSentPayment(
-                                    item.due_amount.toString(),
-                                    item.year
-                                  )
-                            }
-                          >
-                            <HideEyeIcon className={styles["hide-icon"]} />
-                            {item.type === "report"
-                              ? CONTENT.BUTTON_PASSED
-                              : CONTENT.BUTTON_PAID}
-                          </Button>
                         </div>
                       </div>
                     </div>
@@ -1253,7 +1254,7 @@ export const ActionsPage = () => {
                 <Text className={styles["text-block"]}>
                   {CONTENT.DESCRIPTION_NEW_ACTIONS_ONE}
                 </Text>
-                <Text className={styles["text-block"]}>
+                {/*<Text className={styles["text-block"]}>
                   {CONTENT.DESCRIPTION_NEW_ACTIONS_TWO}
                 </Text>
                 <Link
@@ -1261,7 +1262,7 @@ export const ActionsPage = () => {
                   onClick={() => navigate("/taxes")}
                 >
                   {CONTENT.OPERATIONS_LINK}
-                </Link>
+                </Link>*/}
               </div>
             </div>
           )}

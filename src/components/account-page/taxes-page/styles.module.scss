@@ -596,9 +596,9 @@ $xxl: 2560px;
 }
 
 .amount-inner:hover .amount-part {
-  @media screen and (min-width: $s) {
-    margin-right: 50px;
-  }
+  // @media screen and (min-width: $s) {
+  // margin-right: 50px;
+  //}
 }
 
 .delete-icon {
