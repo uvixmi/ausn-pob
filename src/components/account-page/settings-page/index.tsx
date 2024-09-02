@@ -121,7 +121,7 @@ export const SettingsPage = () => {
                 >
                   {CONTENT.TAXMODE_HEADING}
                 </Title>
-                <div className={styles["button-heading"]}>
+                {/*<div className={styles["button-heading"]}>
                   <Button
                     className={styles["edit-button"]}
                     onClick={() => setIsOpenEditMode(true)}
@@ -132,7 +132,7 @@ export const SettingsPage = () => {
                     </Text>
                   </Button>
                 </div>
-                {/*<div className={styles["button-heading"]}>
+              <div className={styles["button-heading"]}>
                   <DocumentIcon />
                   <Text className={styles["button-link"]}>
                     {CONTENT.BUTTON_CHANGES_HISTORY}

@@ -1418,6 +1418,7 @@ export const TaxesPage = () => {
                                               selectRef.current.blur()
                                             }
                                           }}
+                                          suffixIcon={null}
                                           ref={selectRef}
                                           options={
                                             operation.category === "debet"
@@ -1485,9 +1486,10 @@ export const TaxesPage = () => {
                                           onChange={(value) => {
                                             handleChangeMarkup(value)
                                           }}
+                                          disabled
                                         />
 
-                                        {operation.markup_mode_code === 2 ||
+                                        {/*operation.markup_mode_code === 2 ||
                                         operation.markup_mode_code === 3 ||
                                         (operationsValue.filter(
                                           (item) => item.id === operation.id
@@ -1503,7 +1505,7 @@ export const TaxesPage = () => {
                                           >
                                             <PersonEditIcon />
                                           </Tooltip>
-                                        ) : null}
+                                        ) : null*/}
                                       </div>
                                       {/*isMobile && (
                                         <Button

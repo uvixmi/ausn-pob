@@ -706,9 +706,9 @@ export const ActionsPage = () => {
                   disabled={isButtonDisabled}
                 >
                   {!isButtonDisabled ? (
-                    <>
+                    <div className={styles["arrow-round-update-wrapper"]}>
                       <ArrowRoundUpdateIcon /> {CONTENT.BUTTON_UPDATE_ACTIONS}
-                    </>
+                    </div>
                   ) : secondsRemaining > 58 ? (
                     <>
                       <Spin indicator={antIcon} />
@@ -717,11 +717,16 @@ export const ActionsPage = () => {
                       </Text>
                     </>
                   ) : (
-                    <>
-                      {CONTENT.TIMER_START +
-                        secondsRemaining +
-                        CONTENT.TIMER_SEC}
-                    </>
+                    <div className={styles["arrow-round-update-wrapper"]}>
+                      <ArrowRoundUpdateIcon
+                        className={styles["arrow-round-update"]}
+                      />
+                      <span className={styles["timer-text"]}>
+                        {CONTENT.TIMER_START +
+                          secondsRemaining +
+                          CONTENT.TIMER_SEC}
+                      </span>
+                    </div>
                   )}
                 </ButtonOne>
               </div>
@@ -945,8 +950,10 @@ export const ActionsPage = () => {
                                             title={() =>
                                               item.accrued_amount_kv &&
                                               item.accrued_amount &&
-                                              item.paid_amount &&
-                                              item.due_amount
+                                              item.paid_amount !== null &&
+                                              item.due_amount !== null &&
+                                              item.paid_amount !== undefined &&
+                                              item.due_amount !== undefined
                                                 ? getTooltipUsn(
                                                     item.accrued_amount_kv,
                                                     item.accrued_amount,

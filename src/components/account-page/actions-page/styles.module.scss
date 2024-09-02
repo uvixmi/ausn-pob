@@ -955,3 +955,18 @@ $xxl: 2560px;
   border: none;
   padding: 0;
 }
+
+.arrow-round-update {
+  color: #d1d1d1 !important;
+}
+
+.arrow-round-update-wrapper {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.timer-text {
+  min-width: 95px;
+  text-align: left;
+}
