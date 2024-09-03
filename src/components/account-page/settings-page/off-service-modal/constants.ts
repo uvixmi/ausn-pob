@@ -3,7 +3,7 @@ export const CONTENT = {
 
   OFF_DESCRIPTION: "Жаль, что вы покидаете нас :( ",
   TEXT_AREA_TITLE: "Расскажите, почему вы уходите",
-  THANKS_FOR: "Спасибо, что пользовались АК",
+  THANKS_FOR: "Спасибо, что пользовались Модульбухгалтерия",
 
   BUTTON_CANCEL: "Отключить сервис",
   BUTTON_SAVE: "Остаться",
