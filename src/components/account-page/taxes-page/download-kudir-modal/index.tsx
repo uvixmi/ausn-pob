@@ -83,10 +83,13 @@ export const DownloadKudirModal = ({
   })
 
   const formatOptions = [
-    { value: "pdf", label: "pdf" },
+    {
+      value: "pdf",
+      label: <Text className={styles["text-input"]}>{"pdf"}</Text>,
+    },
     {
       value: "xlsx",
-      label: "xlsx",
+      label: <Text className={styles["text-input"]}>{"xlsx"}</Text>,
     },
   ]
 

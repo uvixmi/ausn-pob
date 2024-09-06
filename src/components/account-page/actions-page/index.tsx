@@ -321,7 +321,11 @@ export const ActionsPage = () => {
 
       downloadLink.href = window.URL.createObjectURL(blob)
 
-      downloadLink.download = `${title} от ${report_date}.xml`
+      const contentDisposition = response.headers.get("Content-Disposition")
+      downloadLink.download = contentDisposition
+        ? contentDisposition.match(/filename="([^"]+)"/)?.[1] ||
+          `${title} от ${report_date}.xml`
+        : `${title} от ${report_date}.xml`
       document.body.appendChild(downloadLink)
       downloadLink.click()
       document.body.removeChild(downloadLink)
@@ -899,18 +903,18 @@ export const ActionsPage = () => {
                                     />
                                   ) : null}
                                   {" из "}
-                                  {item.accrued_amount && (
+                                  {item.accrued_amount ? (
                                     <Amount
                                       value={item.accrued_amount}
                                       withDecimal
                                       decimalStyle="translucent"
                                       className={styles["amount-paid-text"]}
                                     />
-                                  )}
+                                  ) : null}
                                 </Text>
                               </div>
 
-                              {item.accrued_amount && (
+                              {item.accrued_amount ? (
                                 <Progress
                                   percent={
                                     item.paid_amount &&
@@ -934,7 +938,7 @@ export const ActionsPage = () => {
                                       : "#4AA9FF"
                                   }
                                 />
-                              )}
+                              ) : null}
                               <div className={styles["amount-pay"]}>
                                 <Text className={styles["amount-heading"]}>
                                   {CONTENT.TEXT_AMOUNT_TO_PAY}
@@ -943,46 +947,46 @@ export const ActionsPage = () => {
                                   {item.due_amount ? (
                                     <>
                                       {item.accrued_amount_kv &&
-                                        item.accrued_amount &&
-                                        item.accrued_amount_kv <
-                                          item.accrued_amount && (
-                                          <Tooltip
-                                            title={() =>
-                                              item.accrued_amount_kv &&
-                                              item.accrued_amount &&
-                                              item.paid_amount !== null &&
-                                              item.due_amount !== null &&
-                                              item.paid_amount !== undefined &&
-                                              item.due_amount !== undefined
-                                                ? getTooltipUsn(
-                                                    item.accrued_amount_kv,
-                                                    item.accrued_amount,
-                                                    item.paid_amount,
-                                                    item.due_amount,
-                                                    item.due_date
-                                                  )
-                                                : null
+                                      item.accrued_amount &&
+                                      item.accrued_amount_kv <
+                                        item.accrued_amount ? (
+                                        <Tooltip
+                                          title={() =>
+                                            item.accrued_amount_kv &&
+                                            item.accrued_amount &&
+                                            item.paid_amount !== null &&
+                                            item.due_amount !== null &&
+                                            item.paid_amount !== undefined &&
+                                            item.due_amount !== undefined
+                                              ? getTooltipUsn(
+                                                  item.accrued_amount_kv,
+                                                  item.accrued_amount,
+                                                  item.paid_amount,
+                                                  item.due_amount,
+                                                  item.due_date
+                                                )
+                                              : null
+                                          }
+                                          placement={
+                                            !isMobile ? "topRight" : undefined
+                                          }
+                                          arrow={{ pointAtCenter: true }}
+                                          overlayInnerStyle={
+                                            !isMobile
+                                              ? {
+                                                  width: "fit-content",
+                                                }
+                                              : undefined
+                                          }
+                                          className="tooltip-custom"
+                                        >
+                                          <InfoCircleOutlined
+                                            className={
+                                              styles["info-icon-amount"]
                                             }
-                                            placement={
-                                              !isMobile ? "topRight" : undefined
-                                            }
-                                            arrow={{ pointAtCenter: true }}
-                                            overlayInnerStyle={
-                                              !isMobile
-                                                ? {
-                                                    width: "fit-content",
-                                                  }
-                                                : undefined
-                                            }
-                                            className="tooltip-custom"
-                                          >
-                                            <InfoCircleOutlined
-                                              className={
-                                                styles["info-icon-amount"]
-                                              }
-                                            />
-                                          </Tooltip>
-                                        )}
+                                          />
+                                        </Tooltip>
+                                      ) : null}
                                       <Text
                                         className={styles["amount-to-pay-text"]}
                                       >
@@ -1016,40 +1020,40 @@ export const ActionsPage = () => {
                                       style={{ display: "flex", gap: "6px" }}
                                     >
                                       {item.accrued_amount_now !== null &&
-                                        item.accrued_amount_now !=
-                                          item.accrued_amount && (
-                                          <Tooltip
-                                            title={() =>
-                                              getTooltipReport(
-                                                item.accrued_amount,
-                                                item.accrued_amount_now
-                                              )
+                                      item.accrued_amount_now !==
+                                        item.accrued_amount ? (
+                                        <Tooltip
+                                          title={() =>
+                                            getTooltipReport(
+                                              item.accrued_amount,
+                                              item.accrued_amount_now
+                                            )
+                                          }
+                                          overlayInnerStyle={
+                                            !isMobile
+                                              ? {
+                                                  width: "fit-content",
+                                                }
+                                              : undefined
+                                          }
+                                          placement={
+                                            !isMobile ? "topRight" : undefined
+                                          }
+                                          className="tooltip-custom"
+                                          arrow={{ pointAtCenter: true }}
+                                        >
+                                          <InfoCircleOutlined
+                                            className={
+                                              styles["report-icon-amount"]
                                             }
-                                            overlayInnerStyle={
-                                              !isMobile
-                                                ? {
-                                                    width: "fit-content",
-                                                  }
-                                                : undefined
-                                            }
-                                            placement={
-                                              !isMobile ? "topRight" : undefined
-                                            }
-                                            className="tooltip-custom"
-                                            arrow={{ pointAtCenter: true }}
-                                          >
-                                            <InfoCircleOutlined
-                                              className={
-                                                styles["report-icon-amount"]
-                                              }
-                                            />
-                                          </Tooltip>
-                                        )}
+                                          />
+                                        </Tooltip>
+                                      ) : null}
                                       <Text
                                         className={styles["amount-to-pay-text"]}
                                       >
-                                        {(item.accrued_amount ||
-                                          item.accrued_amount === 0.0) && (
+                                        {item.accrued_amount ||
+                                        item.accrued_amount === 0.0 ? (
                                           <Amount
                                             value={item.accrued_amount}
                                             withDecimal
@@ -1057,17 +1061,17 @@ export const ActionsPage = () => {
                                               styles["amount-to-pay-text"]
                                             }
                                           />
-                                        )}
+                                        ) : null}
                                       </Text>
                                     </div>
                                   )}
                                 </div>
-                                {(!item.report_update ||
-                                  (!formedSuccess.includes({
-                                    task_code: item.task_code,
-                                    year: item.year,
-                                  }) &&
-                                    !item.report_update)) && (
+                                {!item.report_update ||
+                                (!formedSuccess.includes({
+                                  task_code: item.task_code,
+                                  year: item.year,
+                                }) &&
+                                  !item.report_update) ? (
                                   <div
                                     className={styles["declaration-wrapper"]}
                                   >
@@ -1091,18 +1095,18 @@ export const ActionsPage = () => {
                                 />
                               </Tooltip>*/}
                                   </div>
-                                )}
+                                ) : null}
                               </>
                             )
                           )}
                         </div>
-                        {((item.type === "report" &&
+                        {(item.type === "report" &&
                           item.report_code &&
                           item.report_update) ||
-                          formedSuccess.includes({
-                            task_code: item.task_code,
-                            year: item.year,
-                          })) && (
+                        formedSuccess.includes({
+                          task_code: item.task_code,
+                          year: item.year,
+                        }) ? (
                           <div className={styles["amount-pay"]}>
                             <div className={styles["formed-date"]}>
                               {formedSuccess.includes({
@@ -1153,7 +1157,7 @@ export const ActionsPage = () => {
                               {CONTENT.BUTTON_UPDATE}
                             </Button>
                           </div>
-                        )}
+                        ) : null}
                         <div className={styles["row-item-buttons"]}>
                           {(item.type === "report" && item.report_code) ||
                           formedSuccess.includes({
@@ -1224,7 +1228,7 @@ export const ActionsPage = () => {
                               </ButtonOne>
                             )
                           )}
-                          {item.type === "report" && (
+                          {item.type === "report" ? (
                             <Button
                               className={styles["paid-button"]}
                               onClick={() =>
@@ -1244,7 +1248,7 @@ export const ActionsPage = () => {
                               <HideEyeIcon className={styles["hide-icon"]} />
                               {CONTENT.BUTTON_PASSED}
                             </Button>
-                          )}
+                          ) : null}
                         </div>
                       </div>
                     </div>
