@@ -1052,8 +1052,19 @@ export const ActionsPage = () => {
                                       <Text
                                         className={styles["amount-to-pay-text"]}
                                       >
-                                        {item.accrued_amount ||
-                                        item.accrued_amount === 0.0 ? (
+                                        {item.task_code === "ZDP" ? (
+                                          item.tax_base ||
+                                          item.tax_base === 0.0 ? (
+                                            <Amount
+                                              value={item.tax_base}
+                                              withDecimal
+                                              className={
+                                                styles["amount-to-pay-text"]
+                                              }
+                                            />
+                                          ) : null
+                                        ) : item.accrued_amount ||
+                                          item.accrued_amount === 0.0 ? (
                                           <Amount
                                             value={item.accrued_amount}
                                             withDecimal
@@ -1238,11 +1249,13 @@ export const ActionsPage = () => {
                                       item.year,
                                       item.report_code
                                     )
-                                  : item.due_amount &&
-                                    handleSentPayment(
+                                  : item.due_amount !== null &&
+                                    item.due_amount !== undefined
+                                  ? handleSentPayment(
                                       item.due_amount.toString(),
                                       item.year
                                     )
+                                  : null
                               }
                             >
                               <HideEyeIcon className={styles["hide-icon"]} />
