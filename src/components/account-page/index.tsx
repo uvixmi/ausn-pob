@@ -464,9 +464,7 @@ export const AccountPage = ({
                   </Button>
                 </Dropdown>
               </div>
-            ) : (
-              <Skeleton.Input active />
-            )
+            ) : null
           ) : null}
           <Outlet />
           {isMobile && (
